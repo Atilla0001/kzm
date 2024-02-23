@@ -1,0 +1,35 @@
+$firstFamily: 'Caladea', serif;
+
+.card {
+
+    position: sticky;
+    top: 0;
+
+    .col1 {
+        display: flex;
+        width: 90%;
+        top: 0;
+        padding-right: 0;
+
+        #img {
+            height: auto;
+            width: 90%;
+        }
+    }
+
+    .col2 {
+        padding-left: 0;
+        display: grid;
+        grid-template-rows: 45% ; 
+        gap: 0;
+        .p1 {
+            font-family: $firstFamily;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .p2 {
+            color: #7E7EAA;
+        }
+    }
+}

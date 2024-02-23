@@ -1,0 +1,78 @@
+
+#Navbar {
+  background: white !important;
+  #container {
+    margin: 0 5%;
+ background: transparent;
+
+  #logo {
+    height: 62.5px;
+  }
+
+  #buttons {
+    padding-left: 10%;
+
+
+   #button{
+    font-weight: 500;
+    color: dimgrey;
+  }
+  }
+  #button1{
+    font-weight: 500;
+    color: dimgrey;
+     text-decoration: none;
+     padding-left: 12%;
+     white-space: nowrap;
+
+  }
+  #buttonLog{
+    font-weight: 500;
+    color: dimgrey;
+     text-decoration: none;
+     padding-left: -2%;
+     white-space: nowrap;
+  }
+
+
+@media screen and (max-width: 1319px) {
+  #button{
+    font-weight: 500;
+    color: dimgrey;
+    font-size: 70%;
+    
+  }
+
+  #button1{
+    font-weight: 500;
+    color: dimgrey;
+    font-size: 70%;
+  }
+
+}
+@media screen and (max-width: 1117px) {
+  #buttons{
+  margin-left: -10%;
+  }
+  #button1{
+    font-weight: 500;
+    color: dimgrey;
+    font-size: 70%;
+  }
+  #buttonLog{
+    font-weight: 500;
+    color: dimgrey;
+    font-size: 70%;
+}
+}
+@media screen and (max-width: 992px) {
+ .ayrac{
+  display: none;
+ }
+ #buttons{
+  margin-left: -20%;
+  }
+}
+
+  }
+}
