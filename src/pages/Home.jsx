@@ -138,7 +138,7 @@ const Home = () => {
 
         <Container id='cards'>
           <Row id='cards1'>
-            <Col className='colCardForRes'>
+            <Col md={4} className='colCardForRes'>
               <CardLesson
                 infoText='İleri Seviye Excel Eğitimi'
                 name='Adem Yılmaz'
@@ -151,7 +151,7 @@ const Home = () => {
 
               ></CardLesson>
             </Col>
-            <Col className='colCardForRes'>
+            <Col md={4} className='colCardForRes'>
               <CardLesson
                 infoText='Kağıt Telkari'
                 name='Rumeysa Yalçın'
@@ -164,7 +164,7 @@ const Home = () => {
 
               ></CardLesson>
             </Col>
-            <Col className='colCardForRes'>
+            <Col md={4} className='colCardForRes'>
               <CardLesson
                 infoText='Kardiyo Eğitimi'
                 name='Tuna Tavus'
@@ -179,7 +179,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row id='cards2'>
-            <Col className='colCardForRes'>
+            <Col md={4} className='colCardForRes'>
               <CardLesson
                 infoText='Sureler - Mealler Eğitimi'
                 name='Recep Aktaş'
@@ -192,7 +192,7 @@ const Home = () => {
 
               ></CardLesson>
             </Col>
-            <Col className='colCardForRes'>
+            <Col md={4} className='colCardForRes'>
               <CardLesson
                 infoText='Kodlama Eğitimi'
                 name='Kemal Kartal'
@@ -205,7 +205,7 @@ const Home = () => {
 
               ></CardLesson>
             </Col>
-            <Col className='colCardForRes'>
+            <Col md={4} className='colCardForRes'>
               <CardLesson
                 infoText='Dil Bilgisi / Paragraf Yöntemi ve Teknikleri'
                 name='Ayşenur Güven'

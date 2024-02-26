@@ -25,15 +25,15 @@ const CardLesson = ( props ) => {
         <Card.Footer>
         <Container>
       <Row id='rowBelow'>
-        <Col xs={6} md={2}>
+        <Col xs={3} md={3} lg={3} xl={2}>
         <img src={props.imageSrc} alt="" className='imgProfile'></img>
         </Col>
-        <Col xs={6} md={6}>
+        <Col xs={9} md={9}  lg={9} xl={5}>
         <p className="text-muted" id='name'>{props.name} </p>
-        <p className="text-muted" id='title'>{props.job}</p>
+        <p className="text-muted job" id='title'>{props.job}</p>
 
         </Col>
-        <Col xs={6} md={4} id='colThird'>
+        <Col xs={6} md={6}  lg={6}  xl={5} id='colThird'>
           <ButtonPurple buttonText={props.btnText} btnColor={props.btnColor} style={{padding:''}}></ButtonPurple>
         </Col>
       </Row>
