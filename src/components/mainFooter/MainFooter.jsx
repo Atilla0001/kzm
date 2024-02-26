@@ -20,22 +20,23 @@ const MainFooter = (props) => {
            
 
             <Col xs={6} md={2} >
-              <CardFooter id='card' section='../src/assets/images/footerImg.png' number='300' catagorie='Eğitmen' display={props.display}></CardFooter>
+              <CardFooter id='card' section='../src/assets/images/footerImg.png' number='300' catagorie='Eğitmen'   visibility={props.visibility}></CardFooter>
 
             </Col>
 
 
             <Col xs={6} md={2}>
-              <CardFooter id='card' section='../src/assets/images/footerImg2.png' number='20,000+' catagorie='Öğrenci'  display={props.display}></CardFooter>
+              <CardFooter id='card' section='../src/assets/images/footerImg2.png' number='20,000+' catagorie='Öğrenci'   visibility={props.visibility}></CardFooter>
 
             </Col>
             <Col xs={6} md={2}>
-              <CardFooter id='card' section='../src/assets/images/footerImg3.png' number='10,000+' catagorie='Video' display={props.display}></CardFooter>
+              <CardFooter id='card' section='../src/assets/images/footerImg3.png' number='10,000+' catagorie='Video'  visibility={props.visibility}></CardFooter>
 
             </Col>
             <Col xs={6} md={2}>
-              <CardFooter id='card' section='../src/assets/images/footerImg4.png' number='100,000+' catagorie='Kullanıcı' display={props.display}></CardFooter>
+              <CardFooter id='card' section='../src/assets/images/footerImg4.png' number='100,000+' catagorie='Kullanıcı'  visibility={props.visibility}></CardFooter>
             </Col>
+            
          
           </Row>
         </Container>
@@ -103,7 +104,8 @@ const MainFooter = (props) => {
   )
 }
 MainFooter.propTypes={
-  display:PropTypes.string
+ 
+  visibility:PropTypes.string
 }
 
 export default MainFooter

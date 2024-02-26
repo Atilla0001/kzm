@@ -77,7 +77,7 @@ Konya Modeli Belediyecilik anlayışımızla; Konya için, ülkemiz için çalı
 
 
 
-      <MainFooter display={'none'}></MainFooter>
+      <MainFooter visibility={'hidden'}></MainFooter>
     </div>
   )
 }

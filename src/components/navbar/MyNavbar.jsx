@@ -31,7 +31,7 @@ const MyNavbar = () => {
             <NavLink to="/egitimler" id='button1'>Eğitimler</NavLink>
             <NavLink  to="/guncel" id='button1'>Güncel</NavLink>
             <NavLink to="/blog" id='button1'>Blog</NavLink>
-           <NavLink to="" id='button1'>İletişim</NavLink>
+           <NavLink to="/iletisim" id='button1'>İletişim</NavLink>
 
           </Nav>
           <Nav>

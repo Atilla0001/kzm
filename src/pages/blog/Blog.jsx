@@ -44,7 +44,7 @@ img={"src/assets/images/b1.png"}
 <div style={{height:'500px'}}></div>
     
 
-      <MainFooter display={'none'}></MainFooter>
+      <MainFooter  visibility={'hidden'}></MainFooter>
     </div>
   )
 }

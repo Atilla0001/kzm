@@ -7,7 +7,7 @@ import  PropTypes  from 'prop-types';
 const CardFooter = (props) => {
   return (
 
-         <Card className='card' style={{display:`${props.display}`}}>
+         <Card className='card' style={{ visibility:`${props.visibility}`}}>
           <Row> 
             <Col  className='col1' >
             <img src={props.section}   alt='' id='img'></img>
@@ -27,6 +27,7 @@ CardFooter.propTypes= {
   section: PropTypes.string.isRequired,
   number:PropTypes.string.isRequired,
   catagorie:PropTypes.string,
-  display:PropTypes.string,
+ 
+  visibility:PropTypes.string,
 }
 export default CardFooter

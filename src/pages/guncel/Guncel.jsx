@@ -33,7 +33,7 @@ const Guncel = () => {
       <div style={{ height: '450px' }}></div>
 
 
-      <MainFooter display={'none'} />
+      <MainFooter  visibility={'hidden'} />
     </div>
   )
 }
