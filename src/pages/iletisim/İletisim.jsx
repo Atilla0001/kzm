@@ -17,7 +17,7 @@ const İletisim = () => {
             <FontHead page={'İletişim'}></FontHead>
 
             <Container className="mt-5">
-                <Row>
+                <Row className="rwConta">
                     <Col id="c1" >
 
                         <iframe
@@ -62,7 +62,7 @@ const İletisim = () => {
                                 </Form.Group>
 
                                 <p>Güvenlik Doğrulaması</p>
-                                <Captcha ></Captcha>
+                                <Captcha > </Captcha>
                             </Form>
 
                         </div>
@@ -90,7 +90,7 @@ const İletisim = () => {
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src="../src/assets/images/Call.png" alt="" className=" img" />
                             <h4 id="title" style={{ textAlign: 'center' }}>Telefon</h4>
-                            <p id="info" style={{ textAlign: 'center' }}>44455424091</p>
+                            <p id="info" style={{ textAlign: 'center' }}>444 55 42 - 4091-4092</p>
                         </div>
 
                     </Col>

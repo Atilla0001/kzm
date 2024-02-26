@@ -41,12 +41,12 @@ export const Captcha = () => {
           Successful
         </Alert>
       )}
-      <div className="card" >
+      <div className="cardxyz" >
 
 
-        <CardContent style={{ backgroundColor: '#dbdafa' }} className="card">
+        <CardContent style={{ backgroundColor: '#dbdafa' }} className="cardxyz">
           <CardActions>
-            <div className="h3" style={{ color: 'white', backgroundColor: 'black', padding: '0 15px', borderRadius: '5px' }}>{captcha}</div>
+            <div className="h3" style={{ color: 'white', backgroundColor: 'black', padding: '5px 15px', borderRadius: '5px' }}>{captcha}</div>
             <Button id="primaryButton2"
 
               onClick={() => refreshString()}

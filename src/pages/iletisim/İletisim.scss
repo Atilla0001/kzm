@@ -50,17 +50,20 @@ $firstColor: #7f56d9;
     font-weight: 500;
   }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     #line{
       visibility: hidden;
       padding: 15px 0;
     }
 }
-
-
-/* @media screen and (max-width: 500px) {
-    #d2{
-      
+@media screen and (max-width: 550px) {
+  #c1{
+    min-height: 600px !important;
+    margin-bottom: 15px;
+  }
+    .rwConta{
+    display: flex;
+    flex-direction: column;
     }
 }
- */
+
