@@ -39,6 +39,7 @@ const Home = () => {
 
   return (
     <div>
+     
       <MyNavbar />
 
       {/* --------------------------------------------slogan input-------------------------- */}
@@ -159,7 +160,7 @@ const Home = () => {
                 imageSrc="../src/assets/images/imgProfile2.png"
                 imgPlay="../src/assets/images/imgPlay2.png"
                 imgcard="../src/assets/images/imgcard2.png"
-                btnColor='##00C1FF'
+                btnColor='#00C1FF'
                 btnText='El Sanatları'
 
               ></CardLesson>

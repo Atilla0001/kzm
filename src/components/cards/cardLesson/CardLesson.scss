@@ -1,9 +1,13 @@
+a {
+    text-decoration: none !important;
+  }
+  
 .card {
     border-radius: 30px !important;
     width: auto;
     margin-right: 4%;
     
-   
+      
 
     #img {
         border-top-left-radius: 30px;
@@ -28,6 +32,7 @@
         padding-bottom: 7%;
         padding-left: 1%;
         font-size: larger;
+       
     }
 
 
@@ -48,6 +53,7 @@
             font-weight: 600;
             color: #000000;
             padding-bottom: 0;
+          
 
         }
 
@@ -57,7 +63,8 @@
             font-size: small;
             padding-top: 0;
             text-wrap: nowrap;
-          
+            
+
           
         }
 

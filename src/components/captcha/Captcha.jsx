@@ -8,7 +8,6 @@ import {
 } from "@mui/material";
 
 import React, { useState } from "react";
-
 import "./Captcha.scss";
 
 export const Captcha = () => {
@@ -46,7 +45,7 @@ export const Captcha = () => {
 
         <CardContent style={{ backgroundColor: '#dbdafa' }} className="cardxyz">
           <CardActions>
-            <div className="h3" style={{ color: 'white', backgroundColor: 'black', padding: '5px 15px', borderRadius: '5px' }}>{captcha}</div>
+            <div className="h3" style={{ color: 'white', backgroundColor: 'black', padding: '5px 15px', borderRadius: '5px' }}>{captcha} </div>
             <Button id="primaryButton2"
 
               onClick={() => refreshString()}
@@ -74,11 +73,20 @@ export const Captcha = () => {
               color="success"
               type="submit"
               sx={{ marginTop: "20px" }}
-              disabled={!text}
+
+              disabled={
+                text === captcha ? false : true
+                
+              }
+
             >
-              Gönder
+              Gönder 
+             
             </Button>
+           
+
           </form>
+       
         </CardContent>
       </div>
     </React.Fragment>

@@ -7,12 +7,16 @@ import ButtonPurple from '../../buttons/ButtonPurple';
 import PropTypes from 'prop-types';
 
 
+
 const CardLesson = ( props ) => {
   const { infoText } = props;
   const fontSize = infoText.length > 37 ? 'smaller' : 'larger';
   return (
+     
+    
     <Card className='card'>
         <Card.Img variant="top" src={props.imgcard} id='img'/>
+       
         <Card.Body>
           <Card.Title id='doubleImg'> 
           <img src={props.imgPlay} alt=''></img>
@@ -22,6 +26,7 @@ const CardLesson = ( props ) => {
            {props.infoText}
           </Card.Text>
         </Card.Body>
+      
         <Card.Footer>
         <Container>
       <Row id='rowBelow'>
@@ -29,18 +34,27 @@ const CardLesson = ( props ) => {
         <img src={props.imageSrc} alt="" className='imgProfile'></img>
         </Col>
         <Col xs={9} md={9}  lg={9} xl={5}>
-        <p className="text-muted" id='name'>{props.name} </p>
+        <p className="text-muted" id='name'>{props.name}  </p>
         <p className="text-muted job" id='title'>{props.job}</p>
 
         </Col>
         <Col xs={6} md={6}  lg={6}  xl={5} id='colThird'>
-          <ButtonPurple buttonText={props.btnText} btnColor={props.btnColor} style={{padding:''}}></ButtonPurple>
+
+        
+           <ButtonPurple buttonText={props.btnText} btnColor={props.btnColor} style={{padding:''}}  ></ButtonPurple>
+           
+
         </Col>
       </Row>
     </Container>
             
         </Card.Footer>
       </Card>
+  
+    
+    
+   
+   
   )
 }
 CardLesson.propTypes = {

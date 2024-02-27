@@ -14,12 +14,10 @@ const MyNavbar = () => {
     
   <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary " id='Navbar'>
       <Container fluid id='container'>
-        <Nav.Link>
-           <img src="../src/assets/images/logo.png
-      " alt="logo" id='logo'
-     
+        <NavLink  to="/">  
+           <img src="../src/assets/images/logo.png" alt="logo" id='logo'
       />
-      </Nav.Link>
+      </NavLink>
      
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" >

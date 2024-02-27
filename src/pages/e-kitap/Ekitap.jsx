@@ -31,7 +31,7 @@ const Ekitap = () => {
                 <img src="../src/assets/images/i2.png" alt="" id="img" />
               </Container>
               <p id="pRight" style={{right:'10%'}} >El Sanatları</p>
-              <div className="pt-5" id="divRight"> <p className="title">Temel Dini Bilgiler</p> </div>
+              <div className="pt-5" id="divRight"> <p className="title">Origami Sanatı</p> </div>
 
             </Container>
           </Col>
@@ -54,7 +54,7 @@ const Ekitap = () => {
                 <img src="../src/assets/images/i4.png" alt="" id="img" />
               </Container>
               <p id="pRight" style={{right:'6%'}} >Karakalem Çalışmaları</p>
-              <div className="pt-5" id="divRight"> <p className="title">Temel Dini Bilgiler</p> </div>
+              <div className="pt-5" id="divRight"> <p className="title">Karakalem Çalışması</p> </div>
 
             </Container>
           </Col>
@@ -77,7 +77,7 @@ const Ekitap = () => {
                 <img src="../src/assets/images/i6.png" alt="" id="img" />
               </Container>
               <p id="pRight" style={{right:'10%'}} >Evde Fitness</p>
-              <div className="pt-5" id="divRight"> <p className="title">Temel Dini Bilgiler</p> </div>
+              <div className="pt-5" id="divRight"> <p className="title">Evde Fitness</p> </div>
 
             </Container>
           </Col>

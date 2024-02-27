@@ -6,6 +6,8 @@ import Blog from './pages/blog/Blog'
 import Guncel from './pages/guncel/Guncel'
 import Egitimler from './pages/egitimler/Egitimler'
 import İletisim from './pages/iletisim/İletisim'
+import EducationPage from './pages/educationPage/EducationPage'
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route index element={<Home/> }></Route>
+      <Route path='educationPage' element={<EducationPage/>}></Route>
       <Route path='/home' element={<Home/>}></Route>
       <Route path='/ekitap' element={<Ekitap></Ekitap>}></Route>
       <Route path='/kurumsal' element={<Kurumsal/>}></Route>
@@ -22,6 +25,7 @@ function App() {
       <Route path='/guncel' element={<Guncel/>}></Route>
       <Route path='/egitimler' element={<Egitimler/>}></Route>
       <Route path='/iletisim' element={<İletisim/>}></Route>
+
 
 
     </Routes>
