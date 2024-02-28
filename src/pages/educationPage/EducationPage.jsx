@@ -5,6 +5,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Col from 'react-bootstrap/Col';
 import MainFooter from '../../components/mainFooter/MainFooter'
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+import ReactPlayer from 'react-player'
+import localVideo from "./video3sec.mp4";
+import CardEducationPage from '../../components/cards/cardEducationPage/CardEducationPage'
+
+
 
 import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
@@ -26,7 +32,7 @@ const EducationPage = () => {
                         <img src="../src/assets/images/lineVertical.png" alt="" id='lineVertical' />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" className='collapseEdu'>
                         <Nav className="me-auto">
                             <Col>
                                 <p id='title001'>Excell Eğitimi</p>
@@ -36,20 +42,16 @@ const EducationPage = () => {
 
 
                         </Nav>
-                    </Navbar.Collapse>
+                        <div  id='divNav'>
 
-
-
-                    <Container style={{ width: 85, height: 70, paddingRight: '10px' }}>
+                              <Container  className='progressCont'>
                         <CircularProgressbarWithChildren value={66}>
 
-                            <img style={{ width: 60, }} src="../src/assets/images/starr.png" alt="doge" />
+                            <img src="../src/assets/images/starr.png" alt="doge" id='imgStars'/>
 
                         </CircularProgressbarWithChildren>
                     </Container>
-
-
-                    <NavDropdown title="İlerleme Durmunuz" id="basic-nav-dropdown">
+                    <NavDropdown title="İlerleme Durmunuz" id="basic-nav-dropdown" className='pt-3'>
                         <NavDropdown.Item href="#action/3.1">btn1</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">
                             btn2
@@ -60,16 +62,74 @@ const EducationPage = () => {
                             btn4
                         </NavDropdown.Item>
                     </NavDropdown>
+                        </div>
+                      
+                    </Navbar.Collapse>
+    
                 </Container>
             </Navbar>
 
             {/* ________________________________________-video_______________________________________ */}
 
-            <div style={{ height: "500px" }}></div>
+            <div style={{ padding: "15px 15px", }}>
+                <Container fluid style={{ width: '99%', backgroundColor: '#EFEBF5', borderRadius: "20px" }}>
+                    <div style={{
+                        paddingTop
+                            : '15px', display: "flex", flexDirection: "row"
+                    }}>
+                        <p style={{ fontWeight: "500" }}>Anasayfa | Eğitimler |</p>
+                        <p style={{ whiteSpace: "pre", color: "#7f56d9", fontWeight: "500" }}> Excell Eğitimi</p>
+                    </div>
 
-            <Container fluid style={{ maxWidth: "98%" }}>
-                <Row>
-                    <Col md={6}>
+
+
+                    <Container fluid >
+                        <Row>
+                            <Col sm={12} md={12} lg={12} xl={9} style={{ backgroundColor: "black", height: "auto", padding: "0" ,maxHeight:"600px"}}>
+
+                                <ReactPlayer
+                                    url={localVideo}
+                                    width="100%" // Video genişliği
+                                    height="auto" // Video yüksekliği
+                                    controls={true} // Kontrol düğmelerini göster
+                                    playing={true} // Otomatik oynatma
+                                    loop={false} // Videoyu döngüye al
+                                    muted={false} // Sesi kapat
+                                    volume={0.5} // Ses seviyesi
+                                    playbackRate={1.0} // Oynatma hızı
+                                    pip={true} // Picture-in-picture (PiP) modunu etkinleştir
+                                    light={true} // Küçük resim (thumbnail) göster
+                                    style={{ backgroundColor: 'black' }} // Video arka plan rengi
+
+
+                                />
+
+
+
+                            </Col>
+                            <Col id='colVideo'>
+
+
+<CardEducationPage></CardEducationPage>
+
+                            </Col>
+                            <h3 style={{ fontWeight: "700", padding: "20px 0" }}>Excell Eğitimi - Arayüz İnceleme</h3>
+                        </Row>
+                    </Container>
+
+
+
+
+                </Container>
+            </div>
+
+
+            {/* -----------------------info------------------------- */}
+
+
+            <Container fluid style={{ maxWidth: "98%", paddingTop: "60px" }}>
+                <Row style={{ paddingBottom: '80px',display:"flex" ,justifyContent:"space-between" }}>
+                    <Col md={6} lg={12} xl={9} style={{maxWidth:"700px"}}>
                         <h4>Eğitim Açıklaması</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore
@@ -93,40 +153,43 @@ const EducationPage = () => {
                             adipiscing elit.</p>
                         <h4>Bu eğitimde neler öğreneceksiniz?</h4>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                         </ul>
                     </Col>
-                    <Col md={3}></Col>
-                    <Col md={3}>
-                        <Container id='contSag'>
-                           <div>
-                                     <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
+                   
+                    <Col  style={{maxWidth:"400px"}} >
+                        <Container id='contSag' style={{display:"block"}}>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                               <p className='par'>Kategori</p>  <p className='par2'>B.Teknolojileri</p>
+                            </Container>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                               <p className='par'>Eğitmen</p> <p className='par2 par3'>Adem Yılmaz</p>
+                            </Container>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                               <p className='par'>Puan</p><img src="../src/assets/images/voteStars.png" alt="" />
+                            </Container>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                               <p className='par'>Süre</p> <p className='par2'>30 Saat</p>
+                            </Container>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                               <p className='par'>Ders Sayısı</p><p className='par2'>30</p>
+                            </Container>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                               <p className='par'>Testler</p><p className='par2'>5</p>
+                            </Container>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                              <p className='par'>Sertifika</p> <p className='par2'>Var</p>
+                            </Container>
+                            <Container style={{display:"flex",justifyContent:"space-between" }}>
+                              <p className='par'>Dil</p> <p className='par2'>Türkçe</p>
+                            </Container>
 
-                           </div>
-                           <div>
-                                     <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-                                    <p>55555555</p>
-
-                           </div>
                         </Container>
-
+                        <Button id='primaryButton' size='sm' className='btn11'>Eğitime Puan Ver  </Button>
                     </Col>
                 </Row>
 

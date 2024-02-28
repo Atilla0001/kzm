@@ -43,14 +43,14 @@ const MainFooter = (props) => {
 
 
 
-        <Row className='mt-5 pt-2 row1'>
-          <Col xs={6} md={4} style={{ paddingLeft: '0' }} id='collogoFooter'>
+        <Row className='mt-5 pt-2  row1'>
+          <Col  sm={9} xs={9} md={9} lg={3} style={{ paddingLeft: '0' }} id='collogoFooter'>
             <img src="../src/assets/images/logoFooter.png" alt="" id='logoFooter' />
           </Col>
 
-          <Col></Col>
+         
 
-          <Col xs={6} md={2} >
+          <Col  sm={4} xs={6} md={4} lg={2} className='colcc'>
             <h4 className='title'>Hızlı Linkler</h4>
             <Col style={{ display: 'flex' }} className='mt-3'>
               <a className='text' href=''>Hakkımızda</a>
@@ -65,7 +65,7 @@ const MainFooter = (props) => {
 
 
 
-          <Col xs={6} md={2} >
+          <Col sm={4} xs={6} md={4}  lg={2}>
             <h4 className='title'>İletişim</h4>
             <Col style={{ display: 'flex' }} className='mt-3'> <CiPhone className='text' /> <p className='text' style={{ whiteSpace: 'pre-wrap' }}>    (505) 555-0104</p>  </Col>
             <Col style={{ display: 'flex' }} className='mt-1'><CiMail className='text' /> <p className='text' style={{ whiteSpace: 'pre-wrap' }}>     info@komek.com.tr</p> </Col>
@@ -74,7 +74,7 @@ const MainFooter = (props) => {
 
 
 
-          <Col xs={6} md={3} >
+          <Col sm={4} xs={6} md={3}  lg={2}>
             <h4 className='title'>Adres</h4>
             <Col style={{ display: 'flex' }} className='mt-3'><CiLocationOn className='text' /> <p className='text' style={{ whiteSpace: 'pre-wrap' }}>    Horozluhan, 42120 <br />    Selçuklu/Konya</p> </Col>
           </Col>
@@ -82,9 +82,16 @@ const MainFooter = (props) => {
 
 
 
-          <Col xs={6} md={2}> </Col>
+          <Col xs={0} md={0}  lg={3}id='colVidee'> </Col>
 
         </Row>
+
+
+
+
+
+
+
         <Row id='row2'>
           <hr id='hr' className='mt-5' />
           <div >

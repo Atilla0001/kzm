@@ -13,6 +13,7 @@ $firstFamily: 'Caladea', serif;
     }
    .row1{
     margin-top: 6% !important;
+   
 
 .title{
         color: white;
@@ -30,6 +31,9 @@ $firstFamily: 'Caladea', serif;
    #logoFooter{
     width: 100%;
     height: auto;
+   }
+   .colcc{
+    padding-left: 3%;
    }
 }
 
@@ -70,5 +74,10 @@ $firstFamily: 'Caladea', serif;
 @media screen and (min-width: 540px) {
     .containerCards {
       padding-top: 5%; 
+    }
+  }
+@media screen and (min-width: 1220px) {
+    #colVidee {
+      display: none !important;
     }
   }

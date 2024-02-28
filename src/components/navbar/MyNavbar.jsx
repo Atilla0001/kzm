@@ -40,7 +40,10 @@ const MyNavbar = () => {
            </Container>
             
           </Nav>
-                    <ButtonPurple id='buttonPurple' buttonText="Öğrenci Paneli" ></ButtonPurple>
+          <div className='pt-2'>
+          <ButtonPurple id='buttonPurple' buttonText="Öğrenci Paneli"  ></ButtonPurple>
+
+          </div>
 
         </Navbar.Collapse>
           
