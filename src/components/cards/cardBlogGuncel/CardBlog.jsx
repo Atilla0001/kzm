@@ -3,7 +3,10 @@ import Card from 'react-bootstrap/Card';
 import ButtonPurple from '../../buttons/ButtonPurple';
 import Proptypes from 'prop-types'
 
+
 import './CardBlog.scss'
+/* import { propTypes } from 'react-bootstrap/esm/Image'; */
+
 const CardBlog = (props) => {
     return (
         <div >
@@ -20,7 +23,7 @@ const CardBlog = (props) => {
                 </ListGroup>
                 <Card.Body style={{display:'flex', justifyContent:'space-between', maxHeight:'70px'}}>
                     <Card.Text id='date'>{props.date}</Card.Text>
-                    <ButtonPurple buttonText='Devamını Oku'></ButtonPurple>
+                  <ButtonPurple buttonText='Devamını Oku' page={props.page} ></ButtonPurple>
                 </Card.Body>
             </Card>
         </div>
@@ -32,6 +35,7 @@ title:Proptypes.string,
 content: Proptypes.string,
 date:Proptypes.string,
 img:Proptypes.any,
+page: Proptypes.string,
 
 }
 

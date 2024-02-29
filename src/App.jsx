@@ -7,6 +7,8 @@ import Guncel from './pages/guncel/Guncel'
 import Egitimler from './pages/egitimler/Egitimler'
 import İletisim from './pages/iletisim/İletisim'
 import EducationPage from './pages/educationPage/EducationPage'
+import GuncelDetay from './pages/guncelDetay/GuncelDetay'
+import BlogDetay from './pages/blogDetay/BlogDetay'
 
 
 
@@ -25,6 +27,8 @@ function App() {
       <Route path='/guncel' element={<Guncel/>}></Route>
       <Route path='/egitimler' element={<Egitimler/>}></Route>
       <Route path='/iletisim' element={<İletisim/>}></Route>
+      <Route path='/blogdetay' element={<BlogDetay/>}></Route>
+      <Route path='/gunceldetay' element={<GuncelDetay></GuncelDetay>}></Route>
 
 
 

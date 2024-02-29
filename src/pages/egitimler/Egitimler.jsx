@@ -5,8 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Dropdown from 'react-bootstrap/Dropdown';
+/* import ButtonGroup from 'react-bootstrap/ButtonGroup';
+ */import Dropdown from 'react-bootstrap/Dropdown';
 import Badge from 'react-bootstrap/Badge';
 
 
@@ -28,12 +28,32 @@ const Egitimler = () => {
 
               
 <Container className="containerButtons">
-<Button variant="primary">
-      Profile <Badge bg="secondary">9</Badge>
-      <span className="visually-hidden">unread messages</span>
+<Button variant="transparent" style={{display:"flex"}} className="buttonx " >
+      Tümü <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">34</Badge>
+    </Button>
+<Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
+Bilişim Teknolojileri <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">9</Badge>
+    </Button>
+<Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
+El Sanatları <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">13</Badge>
+    </Button>
+<Button variant="transparent" style={{display:"flex"}} className="buttonx " >
+Resim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">5</Badge>
+    </Button>
+<Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
+Din ve Değerler Eğitimi<Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">2</Badge>
+    </Button>
+<Button variant="transparent" style={{display:"flex"}} className="buttonx " >
+Spor <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">1</Badge>
+    </Button>
+<Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
+Yabancı Diller <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">3</Badge>
+    </Button>
+<Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
+Kişisel Gelişim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">1</Badge>
     </Button>
 
-          <ButtonGroup aria-label="Basic example" style={{ display: 'flex', alignItems: 'center', }}>
+{/*           <ButtonGroup aria-label="Basic example" style={{ display: 'flex', alignItems: 'center', }}>
           <Button className="buttonx " style={{ display: 'grid', gridTemplateColumns: 'auto auto' }} >Tümü  <div id="number"> 34</div>   </Button>
           <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Bilişim Teknolojileri<div id="number">9</div></Button>
           <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>El Sanatları <div id="number">13</div></Button>
@@ -43,7 +63,7 @@ const Egitimler = () => {
           <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Yabancı Diller<div id="number">3</div></Button>
           <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Kişisel Gelişim<div id="number">1</div></Button>
 
-        </ButtonGroup>
+        </ButtonGroup> */}
 
 </Container>
 

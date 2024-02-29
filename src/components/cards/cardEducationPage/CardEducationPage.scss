@@ -6,6 +6,9 @@
     padding: 0;
 
     .rwCard {
+   
+       display: flex;
+      
 
         .cardCol {
             display: flex;
@@ -21,6 +24,8 @@
         }   
         .cardCol2{
           max-height: 40px;
+          max-width: fit-content;
+          
                 #p11{
                    
                     white-space: nowrap;
@@ -31,6 +36,85 @@
                     font-weight: 600;
                 }
             }
+        .cardCol3{
+        
+      
+      
+        
+         align-items: center;
+         margin-top: 3%;
+         
+              
+            }
     }
 
 }
+
+@media screen and (max-width:1500px  )  and (min-width:1200px  ){
+    .cardCol2{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .cardCol3{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .cardCol2{
+        padding-top: 6px;
+    }
+    .rwCard{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+#p11{
+    font-size: small;
+}
+#p22{
+    font-size: small;
+}
+}
+
+
+@media screen and (max-width:450px) {
+.cardCol3{
+display: flex;
+justify-content: center;
+
+}
+}
+
+@media screen and (max-width:337px) {
+    .cardCol2{
+        padding-right: 0 !important;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .vdİmg{
+        max-width: 10%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+   
+    #p11{
+        font-size: xx-small;
+    }
+    #p22{
+        font-size: xx-small;
+        
+    }
+
+}
+
+
+
+
+

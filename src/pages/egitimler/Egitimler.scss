@@ -1,19 +1,19 @@
 .buttonx{
     background: transparent !important;
     color:  #A2ABBA !important;
-   border: none !important;
+   
    white-space: nowrap;
+   font-weight: 700 !important;
 
 }
 
 .buttonx:hover{
+    /* color: blue !important; */
     background: #e5e5e7 !important;
-}
-.buttonx:active
-{
-    background: #000;
-}
-#number{
+    /* border-bottom: 4px blue !important;
+*/
+} 
+/* #number{
     display: flex;align-items: center;
     font-size: small;
     color: #000;
@@ -25,6 +25,15 @@
     border-radius: 3px;
         
     
+} */
+#number{
+    
+    
+    color: #000;
+    background: #E0E5EE !important;
+    font-weight: 500;
+  
+      
 }
 /* #buttonDiv{
     display: flex;

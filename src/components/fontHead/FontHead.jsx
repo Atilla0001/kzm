@@ -10,7 +10,7 @@ const FontHead = (props) => {
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <img src="../src/assets/images/rectangleBg.png" alt="" id="img" />
         <h3>{props.page}</h3>
-        <p style={{whiteSpace:"-moz-pre-wrap"}}>Anasayfa / {props.page}</p>
+        <p style={{whiteSpace:"-moz-pre-wrap"}}>Anasayfa / {props.page} </p>
       </div>
 
     </Container>

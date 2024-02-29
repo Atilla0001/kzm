@@ -23,6 +23,7 @@ const Guncel = () => {
             content={'‘’Her şey Seninle Başlar Eğitim Programı’’ Tüm Eğitim Şube Müdürlüğü çalışanlarının kendini yenilemesi, değişen ve gelişen iletişim yöntemleri konusunda bilgilenmeleri ve iş yaşamında daha verimli olmaları adına “Her şey seninle başlar.” Mottosuyla yola çıkılarak bir eğitim planlaması yapıldı. Eğitim programları sayesinde kurum içindeki ve kurum ile vatandaş arasındaki iletişim daha verimli hale gelmesi amaçlanmıştır... '}
             date={'31.01.2024'}
             img={"src/assets/images/b1.png"}
+            page={"/gunceldetay"}
           ></CardBlog></Col>
           <Col></Col>
           <Col></Col>

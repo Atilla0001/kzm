@@ -14,37 +14,38 @@ import './Blog.scss'
 const Blog = () => {
   return (
     <div>
-      <MyNavbar/>
+      <MyNavbar />
       <FontHead page={'Blog'}></FontHead>
-      <div style={{height:'100px'}}></div>
+      <div style={{ height: '100px' }}></div>
 
       <Container>
-      <Row>
-        <Col><CardBlog 
-        title={'Uzaktan Eğitim Nedir?'} 
-        content={'Uzaktan Eğitim: Yarının Eğitim Modeli Geleneksel eğitim, fiziksel sınıflar, tahtalar ve kampüslerle özdeşleşirken, teknolojinin hızlı...'}
-        date={'26.10.2023'}
-img={"src/assets/images/b1.png"}
-        ></CardBlog></Col>
-        <Col><CardBlog 
-        title={'Sıkça Sorulan Sorular'}
-        content={'Uzaktan eğitim nedir? - Uzaktan eğitim, öğrencilere derslere internet aracılığıyla erişim sağlayan bir eğitim...'}
-        date={'27.10.2023'}
-        img={"src/assets/images/b2.png"}
-        ></CardBlog></Col>
-        <Col><CardBlog
-        title={'Seo Nedir?'}
-        content={'SEO yani Arama Motoru Optimizasyonu, web sitenizi arama motorlarında daha yüksek sıralara taşımanın bir yoludur....'}
-        date={'27.10.2023'}
-        img={"src/assets/images/b3.png"}
-        ></CardBlog></Col>
-      </Row>
-    </Container>
+        <Row>
+          <Col><CardBlog
+            title={'Uzaktan Eğitim Nedir?'}
+            content={'Uzaktan Eğitim: Yarının Eğitim Modeli Geleneksel eğitim, fiziksel sınıflar, tahtalar ve kampüslerle özdeşleşirken, teknolojinin hızlı...'}
+            date={'26.10.2023'}
+            img={"src/assets/images/b1.png"}
+            page={"/blogdetay"}
+          ></CardBlog></Col>
+          <Col><CardBlog
+            title={'Sıkça Sorulan Sorular'}
+            content={'Uzaktan eğitim nedir? - Uzaktan eğitim, öğrencilere derslere internet aracılığıyla erişim sağlayan bir eğitim...'}
+            date={'27.10.2023'}
+            img={"src/assets/images/b2.png"}
+          ></CardBlog></Col>
+          <Col><CardBlog
+            title={'Seo Nedir?'}
+            content={'SEO yani Arama Motoru Optimizasyonu, web sitenizi arama motorlarında daha yüksek sıralara taşımanın bir yoludur....'}
+            date={'27.10.2023'}
+            img={"src/assets/images/b3.png"}
+          ></CardBlog></Col>
+        </Row>
+      </Container>
 
-<div style={{height:'500px'}}></div>
-    
+      <div style={{ height: '500px' }}></div>
 
-      <MainFooter  visibility={'hidden'}></MainFooter>
+
+      <MainFooter visibility={'hidden'}></MainFooter>
     </div>
   )
 }

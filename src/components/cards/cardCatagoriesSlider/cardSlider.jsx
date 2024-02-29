@@ -3,7 +3,7 @@ import 'swiper/swiper-bundle.css';
 import CardCatagories from '../cardCatagories/CardCatagories';
 import "./cardSlider.scss"
 import { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+/* import { Container } from 'react-bootstrap'; */
 
 const MySlider = () => {
   const photoList = [
@@ -22,7 +22,7 @@ const MySlider = () => {
   ];
 
   const [slidesPerView, setSlidesPerView] = useState(6);
-  const [isSwiping, setIsSwiping] = useState(false);
+  /* const [isSwiping, setIsSwiping] = useState(false); */
 
   useEffect(() => {
     function handleResize() {
@@ -49,13 +49,13 @@ const MySlider = () => {
     };
   }, []);
 
-  function handleSlideChange() {
+ /*  function handleSlideChange() {
     setIsSwiping(true);
   }
 
   function handleSwiperTransitionEnd() {
     setIsSwiping(false);
-  }
+  } */
 
   return (
     <div> 
@@ -65,8 +65,8 @@ const MySlider = () => {
         grid={{ rows: 1 }} 
         spaceBetween={30} 
         pagination={{ clickable: true }} 
-        onSlideChange={handleSlideChange}
-        onTransitionEnd={handleSwiperTransitionEnd}
+/*         onSlideChange={handleSlideChange}
+        onTransitionEnd={handleSwiperTransitionEnd} */
       >
         {photoList.map((el, index) => (
           <SwiperSlide key={index} className="photo_slide">
@@ -77,9 +77,9 @@ const MySlider = () => {
         ))}
       </Swiper>
       
-      <Container className='mt-5 contDot'>       
+   {/*    <Container className='mt-5 contDot'>       
         <img src="../src/assets/images/dots.png" alt="" id='dot' className={isSwiping ? 'flip' : ''}/>
-      </Container>
+      </Container> */}
     </div>
   );
 };
