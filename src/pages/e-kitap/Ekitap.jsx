@@ -4,6 +4,8 @@ import MyNavbar from "../../components/navbar/MyNavbar"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Container } from "react-bootstrap"
+import MainFooter from '../../components/mainFooter/MainFooter'
+
 import "./Ekitap.scss"
 
 
@@ -87,6 +89,7 @@ const Ekitap = () => {
 
         <Col style={{ height: '150px' }} />
       </Container>
+      <MainFooter  visibility={'hidden'} />
     </div>
 
 

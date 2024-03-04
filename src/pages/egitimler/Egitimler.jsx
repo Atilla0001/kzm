@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 /* import ButtonGroup from 'react-bootstrap/ButtonGroup';
  */import Dropdown from 'react-bootstrap/Dropdown';
 import Badge from 'react-bootstrap/Badge';
+import MainFooter from '../../components/mainFooter/MainFooter'
 
 
 
@@ -188,6 +189,7 @@ Kişisel Gelişim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"
 
 
       <div style={{ height: '300px' }}></div>
+      <MainFooter  visibility={'hidden'} />
     </div>
   )
 }

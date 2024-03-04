@@ -101,7 +101,9 @@ const İletisim = () => {
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src="../src/assets/images/Message.png" alt="" className="img" />
                             <h4 id="title" style={{ textAlign: 'center' }}>E posta Adresi</h4>
+                         
                             <p id="info" style={{ textAlign: 'center' }}> bilgi@kuzem.org</p>
+                            
                         </div>
                     </Col>
 
