@@ -8,13 +8,16 @@ import Form from 'react-bootstrap/Form';
 
 import './İletisim.scss'
 import { Captcha } from "../../components/captcha/Captcha";
-
+import { useTranslation } from "react-i18next";
 
 const İletisim = () => {
+
+
+const {t} = useTranslation();
     return (
         <div>
             <MyNavbar></MyNavbar>
-            <FontHead page={'İletişim'}></FontHead>
+            <FontHead page={`${t("iletisim")}`}></FontHead>
 
             <Container className="mt-5">
                 <Row className="rwConta">
@@ -36,32 +39,32 @@ const İletisim = () => {
 
                     <Col id="c2" >
                         <div  id="d2">
-                            <h4>Bize Yazın</h4>
+                            <h4>{t("iletisim2")} </h4>
 
                             <Form>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label htmlFor="disabledTextInput0">Adınız</Form.Label>
+                                    <Form.Label htmlFor="disabledTextInput0"> {t("iletisim3")}</Form.Label>
                                     <Form.Control id="disabledTextInput0" placeholder="" />
                                 </Form.Group>
 
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>E posta adresiniz</Form.Label>
+                                    <Form.Label> {t("iletisim4")}</Form.Label>
                                     <Form.Control type="email" placeholder="" />
 
                                 </Form.Group>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label htmlFor="disabledTextInput1">Konu</Form.Label>
+                                    <Form.Label htmlFor="disabledTextInput1"> {t("iletisim5")} </Form.Label>
                                     <Form.Control id="disabledTextInput1" placeholder="" />
                                 </Form.Group>
 
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                    <Form.Label>Mesajınız</Form.Label>
+                                    <Form.Label>  {t("iletisim6")} </Form.Label>
                                     <Form.Control as="textarea" rows={6} />
                                 </Form.Group>
 
-                                <p>Güvenlik Doğrulaması</p>
+                                <p>{t("iletisim7")}</p>
                                 <Captcha > </Captcha>
                             </Form>
 
@@ -77,9 +80,8 @@ const İletisim = () => {
                     <Col sm={12} md={3}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src="../src/assets/images/Location.png" alt="" className=" img" />
-                            <h4 id="title" style={{ textAlign: 'center' }}>KUZEM - Eğitim Şube Müdürlüğü</h4>
-                            <p id="info" style={{ textAlign: 'center' }}>Çimenlik Mahallesi, 8, Mevlana Kültür Mrk.
-                                Karatay/KONYA/42030</p>
+                            <h4 id="title" style={{ textAlign: 'center' }}> {t("iletisim8")}</h4>
+                            <p id="info" style={{ textAlign: 'center' }}> {t("iletisim9")}  </p>
                         </div>
 
                     </Col>
@@ -89,7 +91,7 @@ const İletisim = () => {
                     <Col sm={12} md={2}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src="../src/assets/images/Call.png" alt="" className=" img" />
-                            <h4 id="title" style={{ textAlign: 'center' }}>Telefon</h4>
+                            <h4 id="title" style={{ textAlign: 'center' }}>  {t("iletisim10")} </h4>
                             <p id="info" style={{ textAlign: 'center' }}>444 55 42 - 4091-4092</p>
                         </div>
 
@@ -100,7 +102,7 @@ const İletisim = () => {
                     <Col sm={12} md={2}>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
                             <img src="../src/assets/images/Message.png" alt="" className="img" />
-                            <h4 id="title" style={{ textAlign: 'center' }}>E posta Adresi</h4>
+                            <h4 id="title" style={{ textAlign: 'center' }}>  {t("iletisim11")}  </h4>
                          
                             <p id="info" style={{ textAlign: 'center' }}> bilgi@kuzem.org</p>
                             

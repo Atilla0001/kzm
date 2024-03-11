@@ -71,6 +71,11 @@ $firstFamily: 'Caladea', serif;
 }
 
 }
+@media screen and (max-width: 980px) {
+    .colcc1 {
+      padding-top: 40px; 
+    }
+  }
 @media screen and (min-width: 540px) {
     .containerCards {
       padding-top: 5%; 

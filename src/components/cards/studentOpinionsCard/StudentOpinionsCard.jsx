@@ -6,7 +6,7 @@ import './StudentOpinionsCard.scss'
 
 const StudentOpinionsCard = (props) => {
     return (
-        <Card style={{ width: '90%' }}>
+        <Card  className='xyz000'>
             <Card.Body id='body'>
                 <Col id='column' style={{ display: 'flex', alignItems: 'center', paddingTop: '20px' }}>
                  <div> <img src={props.img} alt="" className='img' style={{ height: '45px', marginRight: '10px' }} /></div>  

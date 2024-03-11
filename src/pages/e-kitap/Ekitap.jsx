@@ -5,15 +5,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Container } from "react-bootstrap"
 import MainFooter from '../../components/mainFooter/MainFooter'
-
 import "./Ekitap.scss"
+import { useTranslation } from "react-i18next";
 
 
 const Ekitap = () => {
+  const {t} = useTranslation();
   return (
     <div>
       <MyNavbar></MyNavbar>
-      <FontHead page={"E-Kitap"}></FontHead>
+      <FontHead page={`${t("ekitap0")}`}></FontHead>
       <Container id="allConta" >
         <Row>
           <Col md={6}>
@@ -23,8 +24,8 @@ const Ekitap = () => {
                    <img src="../src/assets/images/i1.png" alt="" id="img" />
               </Container>
               
-              <p style={{left:'9%'}} id="pLeft">Din ve Değerler</p>
-              <div className="pt-5" id="divLeft"> <p className="title">Temel Dini Bilgiler</p> </div>
+              <p style={{left:'9%'}} id="pLeft"> {t("ekitap")} </p>
+              <div className="pt-5" id="divLeft"> <p className="title"> {t("ekitap2")} </p> </div>
             </Container>
           </Col>
           <Col md={6}>
@@ -32,8 +33,8 @@ const Ekitap = () => {
               <Container className="contİnsideRight" style={{ backgroundColor: "#00c1ff" }}>
                 <img src="../src/assets/images/i2.png" alt="" id="img" />
               </Container>
-              <p id="pRight" style={{right:'10%'}} >El Sanatları</p>
-              <div className="pt-5" id="divRight"> <p className="title">Origami Sanatı</p> </div>
+              <p id="pRight" style={{right:'10%'}} > {t("ekitap3")} </p>
+              <div className="pt-5" id="divRight"> <p className="title"> {t("ekitap4")} </p> </div>
 
             </Container>
           </Col>
@@ -45,8 +46,8 @@ const Ekitap = () => {
               <Container className="contİnsideLeft" style={{ backgroundColor: "#ff6905" }}>
                 <img src="../src/assets/images/i3.png" alt="" id="img" />
               </Container>
-              <p  style={{left:'10%'}}  id="pLeft">Yabancı Dil</p>
-              <div className="pt-5" id="divLeft"> <p className="title">Arapça’ya Giriş</p> </div>
+              <p  style={{left:'10%'}}  id="pLeft">  {t("ekitap5")}</p>
+              <div className="pt-5" id="divLeft"> <p className="title"> {t("ekitap6")}</p> </div>
 
             </Container>
           </Col>
@@ -55,8 +56,8 @@ const Ekitap = () => {
               <Container className="contİnsideRight" style={{ backgroundColor: "#dc5348" }}>
                 <img src="../src/assets/images/i4.png" alt="" id="img" />
               </Container>
-              <p id="pRight" style={{right:'6%'}} >Karakalem Çalışmaları</p>
-              <div className="pt-5" id="divRight"> <p className="title">Karakalem Çalışması</p> </div>
+              <p id="pRight" style={{right:'6%'}} >{t("ekitap7")}</p>
+              <div className="pt-5" id="divRight"> <p className="title"> {t("ekitap8")}</p> </div>
 
             </Container>
           </Col>
@@ -68,8 +69,8 @@ const Ekitap = () => {
               <Container className="contİnsideLeft" style={{ backgroundColor: "#7f56d9" }}>
                 <img src="../src/assets/images/i5.png" alt="" id="img" />
               </Container>
-              <p  style={{left:'7%'}}  id="pLeft">Bilişim Teknolojileri</p>
-              <div className="pt-5" id="divLeft"> <p className="title">Algoritma Temelleri</p> </div>
+              <p  style={{left:'7%'}}  id="pLeft">{t("ekitap9")}</p>
+              <div className="pt-5" id="divLeft"> <p className="title">{t("ekitap10")}</p> </div>
 
             </Container>
           </Col>
@@ -78,8 +79,8 @@ const Ekitap = () => {
               <Container className="contİnsideRight" style={{ backgroundColor: "#3d5cff" }}>
                 <img src="../src/assets/images/i6.png" alt="" id="img" />
               </Container>
-              <p id="pRight" style={{right:'10%'}} >Evde Fitness</p>
-              <div className="pt-5" id="divRight"> <p className="title">Evde Fitness</p> </div>
+              <p id="pRight" style={{right:'10%'}} >{t("ekitap11")}</p>
+              <div className="pt-5" id="divRight"> <p className="title">{t("ekitap12")}</p> </div>
 
             </Container>
           </Col>

@@ -4,9 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardLesson from "../cardLesson/CardLesson";
 import './SliderGeneral.scss'
+import {useTranslation} from "react-i18next"
 
 
 function SliderGeneral() {
+  const {t} =useTranslation();
+
   const settings = {
     dots: true,
     infinite: true,
@@ -29,79 +32,79 @@ function SliderGeneral() {
       
         <div style={{ display: 'inline-block' }}>
           <CardLesson
-            infoText='İleri Seviye Excel Eğitimi'
+            infoText= {t("infoText")}
             name='Adem Yılmaz'
-            job='Bilgisayar Öğretmeni'
+            job={t("job")}
             imageSrc="../src/assets/images/imgProfile.png"
             imgPlay="../src/assets/images/imgPlay.png"
             imgcard="../src/assets/images/imgcard.png"
             btnColor='#7f56d9'
-            btnText='B. Teknolojileri'
+            btnText={t("btnText")}
 
           ></CardLesson>
         </div>
        
         <div>
           <CardLesson
-            infoText='Kağıt Telkari'
+            infoText={t("infoText2")}
             name='Rumeysa Yalçın'
-            job='Sanat Öğretmeni'
+            job={t("job2")}
             imageSrc="../src/assets/images/imgProfile2.png"
             imgPlay="../src/assets/images/imgPlay2.png"
             imgcard="../src/assets/images/imgcard2.png"
             btnColor='##00C1FF'
-            btnText='El Sanatları'
+            btnText={t("btnText2")}
 
           ></CardLesson>
         </div>
 
         <div>
           <CardLesson
-            infoText='Kardiyo Eğitimi'
+            infoText={t("infoText3")}
             name='Tuna Tavus'
-            job='Spor Eğitmeni'
+            job={t("job3")}
             imageSrc="../src/assets/images/imgProfile3.png"
             imgPlay="../src/assets/images/imgPlay3.png"
             imgcard="../src/assets/images/imgcard3.png"
             btnColor='blue'
-            btnText='Spor'
+            btnText={t("btnText3")}
 
           ></CardLesson>
         </div>
         <div> <CardLesson
-          infoText='Sureler - Mealler Eğitimi'
+          infoText={t("infoText4")}
           name='Recep Aktaş'
-          job='Din Kültürü Öğretmeni'
+          job={t("job4")}
           imageSrc="../src/assets/images/imgProfile4.png"
           imgPlay="../src/assets/images/imgPlay4.png"
           imgcard="../src/assets/images/imgcard4.png"
           btnColor='#24D198'
-          btnText='Din ve Değerler'
+          btnText={t("btnText4")}
 
         ></CardLesson></div>
         <div>
           <CardLesson
-            infoText='Kodlama Eğitimi'
+            infoText={t("infoText5")}
             name='Kemal Kartal'
-            job='Yazılım Uzmanı'
+            job={t("job5")}
             imageSrc="../src/assets/images/imgProfile5.png"
             imgPlay="../src/assets/images/imgPlay5.png"
             imgcard="../src/assets/images/imgcard5.png"
             btnColor='#7f56d9'
-            btnText='B. Teknolojileri'
+            btnText={t("btnText5")}
 
           ></CardLesson>
         </div>
         <div>
           <CardLesson
-            infoText='Dil Bilgisi / Paragraf Yöntemi ve Teknikleri'
+            infoText={t("infoText6")}
             name='Ayşenur Güven'
-            job='Kişisel Gelişim Uzmanı'
+            job={t("job6")}
             imageSrc="../src/assets/images/imgProfile6.png"
             imgPlay="../src/assets/images/imgPlay6.png"
             imgcard="../src/assets/images/imgcard6.png"
             btnColor='#f15568'
-            btnText='Kişisel Gelişim'
+            btnText={t("btnText6")}
 
           ></CardLesson>
         </div>

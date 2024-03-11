@@ -1,6 +1,9 @@
 import Slider from "react-slick";
 import './SliderStudentOpinions.scss'
 import StudentOpinionsCard from "../studentOpinionsCard/StudentOpinionsCard";
+import { useTranslation } from "react-i18next"
+
+
 
 
 const SliderStudentOpinions = () => {
@@ -14,38 +17,44 @@ const SliderStudentOpinions = () => {
 
 
     };
+    const { t } = useTranslation();
+
     return (
         <div className="slider-container1 mt-4"  >
             <Slider {...settings} className="slider">
 
-                <div style={{ display: 'inline-block', marginRight: '20px' }}>
+                <div style={{ display: 'inline-block', marginRight: '20px' }} className="divdiv">
+                
                     <StudentOpinionsCard
                         img='../src/assets/images/kk.png'
                         name="Kemal Kartal"
-                        text="Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est 
-                    laborum.Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. " />
+                        text={t("text13")} 
+                       
+                    
+                        />
+ 
+
                 </div>
 
-                <div>
+                <div className="divdiv">
+               
                     <StudentOpinionsCard
                         img='../src/assets/images/sy.png'
                         name="Sadik Yilmaz"
-                        text="Excepteur sint occaecat cupidatat non proident, 
-                     sunt in culpa qui officia deserunt mollit anim id est 
-                     laborum.Duis aute irure dolor in reprehenderit in voluptate 
-                     velit esse cillum dolore eu fugiat nulla pariatur. " />
+                        text={t("text14")} />
+                   
+
+
                 </div>
 
-                <div>
-                    <StudentOpinionsCard
+                <div className="divdiv">
+                    
+                      <StudentOpinionsCard
                         img='../src/assets/images/sy2.png'
                         name="Salih Yuksel"
-                        text="Excepteur sint occaecat cupidatat non proident, 
- sunt in culpa qui officia deserunt mollit anim id est 
- laborum.Duis aute irure dolor in reprehenderit in voluptate 
- velit esse cillum dolore eu fugiat nulla pariatur. " />
+                        text={t("text15")} />
+                    
+                  
                 </div>
 
 

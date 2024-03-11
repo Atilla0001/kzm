@@ -1,4 +1,6 @@
-
+.xyz000{
+    width: '90%' 
+}
 
 @media (max-width: 768px) {
     .name{
@@ -13,5 +15,11 @@
    .vote{
     width: 90%;
 }
+   }
+@media (max-width: 600px) {
+    .xyz000{
+       
+    }
+  
    }
   

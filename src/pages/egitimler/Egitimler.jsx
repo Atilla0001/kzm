@@ -9,20 +9,18 @@ import Button from 'react-bootstrap/Button';
  */import Dropdown from 'react-bootstrap/Dropdown';
 import Badge from 'react-bootstrap/Badge';
 import MainFooter from '../../components/mainFooter/MainFooter'
-
-
-
 import './Egitimler.scss'
+import { useTranslation } from "react-i18next";
 
 
 const Egitimler = () => {
 
-
+const {t} = useTranslation();
 
   return (
     <div>
       <MyNavbar />
-      <FontHead page={'Eğitimler'}></FontHead>
+      <FontHead page={`${t("egitimler0")}`}></FontHead>
 
 
 
@@ -30,41 +28,31 @@ const Egitimler = () => {
               
 <Container className="containerButtons">
 <Button variant="transparent" style={{display:"flex"}} className="buttonx " >
-      Tümü <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">34</Badge>
+      {t("egitimler")} <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">34</Badge>
     </Button>
 <Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
-Bilişim Teknolojileri <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">9</Badge>
+  {t("egitimler2")} <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">9</Badge>
     </Button>
 <Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
-El Sanatları <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">13</Badge>
+ {t("egitimler3")} <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">13</Badge>
     </Button>
 <Button variant="transparent" style={{display:"flex"}} className="buttonx " >
-Resim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">5</Badge>
+ {t("egitimler4")}  <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">5</Badge>
     </Button>
 <Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
-Din ve Değerler Eğitimi<Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">2</Badge>
+ {t("egitimler5")} <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">2</Badge>
     </Button>
 <Button variant="transparent" style={{display:"flex"}} className="buttonx " >
-Spor <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">1</Badge>
+ {t("egitimler6")}  <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">1</Badge>
     </Button>
 <Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
-Yabancı Diller <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">3</Badge>
+ {t("egitimler7")}  <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">3</Badge>
     </Button>
 <Button variant="transparent" style={{display:"flex",whiteSpace:"nowrap"}} className="buttonx " >
-Kişisel Gelişim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">1</Badge>
+ {t("egitimler8")} <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"}} id="number">1</Badge>
     </Button>
 
-{/*           <ButtonGroup aria-label="Basic example" style={{ display: 'flex', alignItems: 'center', }}>
-          <Button className="buttonx " style={{ display: 'grid', gridTemplateColumns: 'auto auto' }} >Tümü  <div id="number"> 34</div>   </Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Bilişim Teknolojileri<div id="number">9</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>El Sanatları <div id="number">13</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Resim <div id="number">5</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Din ve Değerler Eğitimi<div id="number">2</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Spor <div id="number">1</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Yabancı Diller<div id="number">3</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Kişisel Gelişim<div id="number">1</div></Button>
 
-        </ButtonGroup> */}
 
 </Container>
 
@@ -75,18 +63,18 @@ Kişisel Gelişim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"
 <Container>
 <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic1">
-        Eğitimler
+      {t("egitimler0")}
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-      <Button className="buttonx " style={{ display: 'grid', gridTemplateColumns: 'auto auto' }} >Tümü  <div id="number"> 34</div>   </Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Bilişim Teknolojileri<div id="number">9</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>El Sanatları <div id="number">13</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Resim <div id="number">5</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Din ve Değerler Eğitimi<div id="number">2</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Spor <div id="number">1</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Yabancı Diller<div id="number">3</div></Button>
-          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Kişisel Gelişim<div id="number">1</div></Button>
+      <Button className="buttonx " style={{ display: 'grid', gridTemplateColumns: 'auto auto' }} >Tümü   {t("egitimler")} <div id="number"> 34</div>   </Button>
+          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Bilişim Teknolojileri {t("egitimler2")} <div id="number">9</div></Button>
+          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>El Sanatları  {t("egitimler3")} <div id="number">13</div></Button>
+          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Resim  {t("egitimler4")} <div id="number">5</div></Button>
+          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Din ve Değerler Eğitimi {t("egitimler5")} <div id="number">2</div></Button>
+          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Spor {t("egitimler6")}  <div id="number">1</div></Button>
+          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Yabancı Diller {t("egitimler7")} <div id="number">3</div></Button>
+          <Button className="buttonx" style={{ display: 'grid', gridTemplateColumns: 'auto auto' }}>Kişisel Gelişim {t("egitimler8")} <div id="number">1</div></Button>
       </Dropdown.Menu>
     </Dropdown>
     </Container>
@@ -105,40 +93,40 @@ Kişisel Gelişim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"
         <Row id='cards1' style={{ paddingTop: '3%' }}>
           <Col md={4} className='colCardForRes'>
             <CardLesson
-              infoText='İleri Seviye Excel Eğitimi'
+              infoText={t("infoText")}
               name='Adem Yılmaz'
-              job='Bilgisayar Öğretmeni'
+              job={t("job")}
               imageSrc="../src/assets/images/imgProfile.png"
               imgPlay="../src/assets/images/imgPlay.png"
               imgcard="../src/assets/images/imgcard.png"
               btnColor='#7f56d9'
-              btnText='B. Teknolojileri'
+              btnText={t("btnText")}
 
             ></CardLesson>
           </Col>
           <Col md={4} className='colCardForRes'>
             <CardLesson
-              infoText='Kağıt Telkari'
+              infoText={t("infoText2")}
               name='Rumeysa Yalçın'
-              job='Sanat Öğretmeni'
+              job={t("job2")}
               imageSrc="../src/assets/images/imgProfile2.png"
               imgPlay="../src/assets/images/imgPlay2.png"
               imgcard="../src/assets/images/imgcard2.png"
               btnColor='#00C1FF'
-              btnText='El Sanatları'
+              btnText={t("btnText2")}
 
             ></CardLesson>
           </Col>
           <Col md={4} className='colCardForRes'>
             <CardLesson
-              infoText='Kardiyo Eğitimi'
+              infoText={t("infoText3")}
               name='Tuna Tavus'
-              job='Spor Eğitmeni'
+              job={t("job3")}
               imageSrc="../src/assets/images/imgProfile3.png"
               imgPlay="../src/assets/images/imgPlay3.png"
               imgcard="../src/assets/images/imgcard3.png"
               btnColor='blue'
-              btnText='Spor'
+              btnText={t("btnText3")}
 
             ></CardLesson>
           </Col>
@@ -146,40 +134,40 @@ Kişisel Gelişim <Badge bg="secondary" style={{marginLeft:"5px",marginTop:"4px"
         <Row id='cards2' style={{ paddingTop: '3%' }}>
           <Col md={4} className='colCardForRes'>
             <CardLesson
-              infoText='Sureler - Mealler Eğitimi'
+              infoText={t("infoText4")}
               name='Recep Aktaş'
-              job='Din Kültürü Öğretmeni'
+              job={t("job4")}
               imageSrc="../src/assets/images/imgProfile4.png"
               imgPlay="../src/assets/images/imgPlay4.png"
               imgcard="../src/assets/images/imgcard4.png"
               btnColor='#24D198'
-              btnText='Din ve Değerler'
+              btnText={t("btnText4")}
 
             ></CardLesson>
           </Col>
           <Col md={4} className='colCardForRes'>
             <CardLesson
-              infoText='Kodlama Eğitimi'
+              infoText={t("infoText5")}
               name='Kemal Kartal'
-              job='Yazılım Uzmanı'
+              job={t("job5")}
               imageSrc="../src/assets/images/imgProfile5.png"
               imgPlay="../src/assets/images/imgPlay5.png"
               imgcard="../src/assets/images/imgcard5.png"
               btnColor='#7f56d9'
-              btnText='B. Teknolojileri'
+              btnText={t("btnText5")}
 
             ></CardLesson>
           </Col>
           <Col md={4} className='colCardForRes'>
             <CardLesson
-              infoText='Dil Bilgisi / Paragraf Yöntemi ve Teknikleri'
+              infoText={t("infoText6")}
               name='Ayşenur Güven'
-              job='Kişisel Gelişim Uzmanı'
+              job={t("job6")}
               imageSrc="../src/assets/images/imgProfile6.png"
               imgPlay="../src/assets/images/imgPlay6.png"
               imgcard="../src/assets/images/imgcard6.png"
               btnColor='#f15568'
-              btnText='Kişisel Gelişim'
+              btnText={t("btnText6")}
 
             ></CardLesson>
 

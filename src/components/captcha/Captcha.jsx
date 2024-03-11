@@ -6,11 +6,16 @@ import {
 
   TextField,
 } from "@mui/material";
+import {useTranslation} from "react-i18next"
 
 import React, { useState } from "react";
 import "./Captcha.scss";
 
 export const Captcha = () => {
+  const {t} =useTranslation();
+
+
+
   const randomString = Math.random().toString(36).slice(8);
   const [captcha, setCaptcha] = useState(randomString);
   const [text, setText] = useState("");
@@ -49,7 +54,7 @@ export const Captcha = () => {
             <Button id="primaryButton2"
 
               onClick={() => refreshString()}
-            > Yenile</Button>
+            >  {t('refresh')}</Button>
           </CardActions>
 
           <form onSubmit={matchCaptcha}>
@@ -64,8 +69,13 @@ export const Captcha = () => {
               helperText={valid && "Invalid Captcha"}
             />
 
-            <p id="kvk">Kişisel veriler kanunu gereğince, sisteme kayıt yapmanız durumunda <a href="">Aydınlatma metnini
-              (tıklayarak okuyabilirsiniz) ve Açık Rıza beyanını (tıklayarak okuyabilirsiniz)</a>  kabul etmiş olursunuz</p>
+            <p id="kvk">
+              {t("text10")}
+              <a href=""> {t("text11")}</a> 
+                {t("text12")}
+              
+              
+              </p>
 
             <Button
               id="primaryButton"
@@ -80,7 +90,7 @@ export const Captcha = () => {
               }
 
             >
-              Gönder 
+             {t("send")}
              
             </Button>
            

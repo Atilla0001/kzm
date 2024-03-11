@@ -5,9 +5,11 @@ import Proptypes from 'prop-types'
 
 
 import './CardBlog.scss'
-/* import { propTypes } from 'react-bootstrap/esm/Image'; */
+import { useTranslation } from 'react-i18next';
 
 const CardBlog = (props) => {
+
+const {t} = useTranslation();
     return (
         <div >
             <Card style={{ width: '95%' , minHeight:'450px', maxHeight:'450px'}} id='Card'>
@@ -23,7 +25,7 @@ const CardBlog = (props) => {
                 </ListGroup>
                 <Card.Body style={{display:'flex', justifyContent:'space-between', maxHeight:'70px'}}>
                     <Card.Text id='date'>{props.date}</Card.Text>
-                  <ButtonPurple buttonText='Devamını Oku' page={props.page} ></ButtonPurple>
+                  <ButtonPurple buttonText={t("btnxx")} page={props.page} ></ButtonPurple>
                 </Card.Body>
             </Card>
         </div>

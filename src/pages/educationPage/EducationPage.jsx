@@ -16,9 +16,13 @@ import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import {Link} from 'react-router-dom'
 import "./EducationPage.scss"
+import { useTranslation } from 'react-i18next';
+
+
+
 const EducationPage = () => {
 
-
+const {t} = useTranslation();
 
     return (
         <>
@@ -38,8 +42,8 @@ const EducationPage = () => {
                     <Navbar.Collapse id="basic-navbar-nav" className='collapseEdu'>
                         <Nav className="me-auto">
                             <Col>
-                                <p id='title001'>Excell Eğitimi</p>
-                                <p id='title002'>-Arayüz İnceleme</p>
+                                <p id='title001'>{t("excel")}</p>
+                                <p id='title002'> {t("excel2")}</p>
 
                             </Col>
 
@@ -54,7 +58,7 @@ const EducationPage = () => {
 
                                 </CircularProgressbarWithChildren>
                             </Container>
-                            <NavDropdown title="İlerleme Durmunuz" id="basic-nav-dropdown" className='pt-3'>
+                            <NavDropdown title={t("excel3")} id="basic-nav-dropdown" className='pt-3'>
                                 <NavDropdown.Item href="#action/3.1">btn1</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">
                                     btn2
@@ -80,8 +84,8 @@ const EducationPage = () => {
                         paddingTop
                             : '15px', display: "flex", flexDirection: "row"
                     }}>
-                        <p style={{ fontWeight: "500" }}>Anasayfa | Eğitimler |</p>
-                        <p style={{ whiteSpace: "pre", color: "#7f56d9", fontWeight: "500" }}> Excell Eğitimi</p>
+                        <p style={{ fontWeight: "500" }}>{t("excel4")} </p>
+                        <p style={{ whiteSpace: "pre", color: "#7f56d9", fontWeight: "500" }}>{t("excel5")}</p>
                     </div>
 
 
@@ -111,17 +115,17 @@ const EducationPage = () => {
 
                             </Col>
                             <Col id='colVideo'>
-                                <CardEducationPage lesson='Giriş - Excell Nedir?' time={'1:57 '}></CardEducationPage>
-                                <CardEducationPage lesson='Arayüz İnceleme' time={'5:43'}></CardEducationPage>
-                                <CardEducationPage lesson='Satırlar ve Sütunlar' time={"8:11"}></CardEducationPage>
-                                <CardEducationPage lesson='Veri Girişi' time={"6:10"}></CardEducationPage>
-                                <CardEducationPage lesson='Formüller' time={"10:00"} ></CardEducationPage>
-                                <CardEducationPage lesson='Düşeyara' time={"7:53"} ></CardEducationPage>
-                                <CardEducationPage lesson='Ekle-Çıkar' time={"10:00"} ></CardEducationPage>
-                                <CardEducationPage lesson='Format Biçimlendir' time={"10:00"} ></CardEducationPage>
+                                <CardEducationPage lesson={t("excel6")} time={'1:57 '}></CardEducationPage>
+                                <CardEducationPage lesson={t("excel7")}  time={'5:43'}></CardEducationPage>
+                                <CardEducationPage lesson={t("excel8")} time={"8:11"}></CardEducationPage>
+                                <CardEducationPage lesson={t("excel9")} time={"6:10"}></CardEducationPage>
+                                <CardEducationPage lesson={t("excel10")} time={"10:00"} ></CardEducationPage>
+                                <CardEducationPage lesson={t("excel11")} time={"7:53"} ></CardEducationPage>
+                                <CardEducationPage lesson={t("excel12")} time={"10:00"} ></CardEducationPage>
+                                <CardEducationPage lesson={t("excel13")}  time={"10:00"} ></CardEducationPage>
 
                             </Col>
-                            <h3 style={{ fontWeight: "700", padding: "20px 0" }}>Excell Eğitimi - Arayüz İnceleme</h3>
+                            <h3 style={{ fontWeight: "700", padding: "20px 0" }}> {t("excel14")} </h3>
                         </Row>
                     </Container>
 
@@ -138,66 +142,56 @@ const EducationPage = () => {
             <Container fluid style={{ maxWidth: "98%", paddingTop: "60px" }}>
                 <Row style={{ paddingBottom: '80px', display: "flex", justifyContent: "space-between" }}>
                     <Col md={6} lg={12} xl={9} style={{ maxWidth: "700px" }}>
-                        <h4>Eğitim Açıklaması</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                            Risus commodo viverra maecenas accumsan lacus vel facilisis
-                            consectetur adipiscing elit.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                            maecenas accumsan lacus vel facilisis consectetur adipiscing elit.</p>
-                        <h4>Sertifika</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                            accumsan lacus vel facilisis consectetur adipiscing elit.</p>
-                        <h4>Bu eğitim kimler içindir?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                            viverra maecenas accumsan lacus vel facilisis consectetur
-                            adipiscing elit.</p>
-                        <h4>Bu eğitimde neler öğreneceksiniz?</h4>
+                        <h4> {t("excel15")} </h4>
+                        <p>
+                            
+                        {t("excel16")}</p>
+                        <h4> {t("excel17")} </h4>
+                        <p>
+                        {t("excel18")} 
+                            </p>
+                        <h4>{t("excel19")} </h4>
+                        <p>{t("excel20")}</p>
+                        <h4>  {t("excel21")} </h4>
                         <ul>
-                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                            <li id='list' >Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li id='list' >{t("excel22")}</li>
+                            <li id='list' >{t("excel23")}</li>
+                            <li id='list' >{t("excel26")}</li>
+                            <li id='list' >{t("excel24")}</li>
+                            <li id='list' >{t("excel25")}  </li>
+                            
                         </ul>
                     </Col>
 
                     <Col style={{ maxWidth: "400px" }} >
                         <Container id='contSag' style={{ display: "block" }}>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Kategori</p>  <p className='par2'>B.Teknolojileri</p>
+                                <p className='par'> {t("excel27")}</p>  <p className='par2'>{t("excel28")}</p>
                             </Container>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Eğitmen</p> <p className='par2 par3'>Adem Yılmaz</p>
+                                <p className='par'> {t("excel29")}</p> <p className='par2 par3'> {t("excel30")}</p>
                             </Container>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Puan</p><img src="../src/assets/images/voteStars.png" alt="" />
+                                <p className='par'> {t("excel31")}</p><img src="../src/assets/images/voteStars.png" alt="" />
                             </Container>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Süre</p> <p className='par2'>30 Saat</p>
+                                <p className='par'> {t("excel32")}</p> <p className='par2'>{t("excel33")}</p>
                             </Container>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Ders Sayısı</p><p className='par2'>30</p>
+                                <p className='par'>{t("excel34")}</p><p className='par2'>30</p>
                             </Container>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Testler</p><p className='par2'>5</p>
+                                <p className='par'>{t("excel35")}</p><p className='par2'>5</p>
                             </Container>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Sertifika</p> <p className='par2'>Var</p>
+                                <p className='par'>{t("excel36")}</p> <p className='par2'>{t("excel37")}</p>
                             </Container>
                             <Container style={{ display: "flex", justifyContent: "space-between" }}>
-                                <p className='par'>Dil</p> <p className='par2'>Türkçe</p>
+                                <p className='par'>{t("excel38")}</p> <p className='par2'>{t("excel39")}</p>
                             </Container>
 
                         </Container>
-                        <Button id='primaryButton' size='sm' className='btn11'>Eğitime Puan Ver  </Button>
+                        <Button id='primaryButton' size='sm' className='btn11'>  {t("excel40")} </Button>
                     </Col>
                 </Row>
 

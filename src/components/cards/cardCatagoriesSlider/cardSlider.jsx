@@ -3,16 +3,19 @@ import 'swiper/swiper-bundle.css';
 import CardCatagories from '../cardCatagories/CardCatagories';
 import "./cardSlider.scss"
 import { useState, useEffect } from 'react';
-/* import { Container } from 'react-bootstrap'; */
+import { useTranslation } from "react-i18next"
+
+
 
 const MySlider = () => {
+  const { t } = useTranslation();
   const photoList = [
-    { path: "../src/assets/images/it.png", name: 'Bilişim Teknolojileri' },
-    { path: "../src/assets/images/art.png", name: 'Resim' },
-    { path: "../src/assets/images/handcrafts.png", name: 'El Sanatları' },
-    { path: "../src/assets/images/Religion.png", name: 'Din ve Değerler Eğitimi' },
-    { path: "../src/assets/images/Languages.png", name: 'Yabancı Diller' },
-    { path: "../src/assets/images/spor.png", name: 'Spor' },
+    { path: "../src/assets/images/it.png", name: `${t("a1")}`  },
+    { path: "../src/assets/images/art.png", name: `${t("a2")}` },
+    { path: "../src/assets/images/handcrafts.png", name: `${t("a3")}` },
+    { path: "../src/assets/images/Religion.png", name: `${t("a4")}` },
+    { path: "../src/assets/images/Languages.png", name: `${t("a5")}` },
+    { path: "../src/assets/images/spor.png", name: `${t("a6")}` },
     { path: "../src/assets/images/it.png", name: 'Bilişim Teknolojileri' },
     { path: "../src/assets/images/art.png", name: 'Resim' },
     { path: "../src/assets/images/handcrafts.png", name: 'El Sanatları' },

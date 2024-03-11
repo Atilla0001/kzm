@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter >
     <Routes>
       <Route index element={<Home/> }></Route>
       <Route path='educationPage' element={<EducationPage/>}></Route>
