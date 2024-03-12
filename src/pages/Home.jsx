@@ -2,7 +2,8 @@ import { Container } from 'react-bootstrap';
 import MyNavbar from '../components/navbar/MyNavbar';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import { FaSearch, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
+/* import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; */
 import { GoArrowUpRight } from "react-icons/go";
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
@@ -98,7 +99,7 @@ const Home = () => {
       <Container fluid >
         <Row className="align-items-center">
           <Col className="text-center">
-            <Button onClick={prevSlide} id='buttonSlider'><FaArrowLeft /></Button>
+            <Button onClick={prevSlide} id='buttonSlider'>{/* <FaArrowLeft /> */}</Button>
           </Col>
           {images.map((image, index) => (
             <Col key={index} className={`text-center ${index === currentIndex ? 'active' : ''}`} id='colKomek'>
@@ -106,7 +107,7 @@ const Home = () => {
             </Col>
           ))}
           <Col className="text-center">
-            <Button onClick={nextSlide} id='buttonSlider'> <FaArrowRight /></Button>
+            <Button onClick={nextSlide} id='buttonSlider'> {/* <FaArrowRight /> */}</Button>
           </Col>
         </Row>
       </Container>

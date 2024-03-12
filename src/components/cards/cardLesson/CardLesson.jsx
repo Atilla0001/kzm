@@ -18,9 +18,10 @@ const CardLesson = ( props ) => {
         <Card.Img variant="top" src={props.imgcard} id='img'/>
        
         <Card.Body>
-          <Card.Title id='doubleImg'> 
+          <Card.Title id='doubleImg' style={{display:"flex", alignItems:"center"}}> 
           <img src={props.imgPlay} alt=''></img>
-          <img src='../src/assets/images/voteStars.png' alt=''></img>
+          <p style={{whiteSpace:"nowrap", fontSize:"small", paddingTop:"15px"}}>38x Eğitim Videosu </p>
+          <img src='../src/assets/images/voteStars.png' alt='' style={{width:"70px", height:"25px", }}></img>
             </Card.Title>
           <Card.Text className='info' style={{ fontSize }}>
            {props.infoText}

@@ -1,5 +1,6 @@
 import './Navbar.scss'
 import Container from 'react-bootstrap/Container';
+/* import Col from 'react-bootstrap/Container'; */
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ButtonPurple from '../buttons/ButtonPurple';
@@ -8,6 +9,12 @@ import { NavLink, Link } from 'react-router-dom'
 import { useTranslation } from "react-i18next"
 import Dropdown from 'react-bootstrap/Dropdown';
 import { TfiWorld } from "react-icons/tfi";
+
+
+
+
+
+
 
 const MyNavbar = () => {
 
@@ -29,7 +36,8 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" >
 
-          <Nav className="me-auto" id='buttons'>
+
+          <Nav className="me-auto" id='buttons' >
 
             <Link to="/" id='button1' >{t('Home')}</Link>
             <NavLink to="/kurumsal" id='button1'>{t('Kurumsal')} </NavLink>
@@ -42,44 +50,54 @@ const MyNavbar = () => {
           </Nav>
 
 
-          <div>
-            <Dropdown data-bs-theme="light" >
-              <Dropdown.Toggle id="dropdown-button-dark-example1" variant="transparent" >
+
+
+
+
+          <div className='langDiv2'>
+
+
+
+
+            <Nav>
+              <Container style={{ display: "flex", justifyContent: "start" }}>
+                <NavLink id='buttonLog'>{t('login')}</NavLink>
+                <NavLink id='buttonLog' className='ayrac'> / </NavLink>
+                <NavLink id='buttonLog'>{t('signup')}</NavLink>
+              </Container>
+            </Nav>
+            <div className='pt-2'>
+              <ButtonPurple id='buttonPurple' buttonText={t('btn')}  > </ButtonPurple>
+            </div>
+
+
+
+            {/*_________________________________ dil seçme kısmı________________________________________ */}
+
+
+
+            <Dropdown data-bs-theme="light" className='pl-5' style={{ outline: "none" }}>
+              <Dropdown.Toggle id="dropdown-button-dark-example1" variant="transparent" style={{ border: "none" }} >
                 <TfiWorld />
               </Dropdown.Toggle>
 
-              <Dropdown.Menu >
-                <Dropdown.Item href="" >
+              <Dropdown.Menu style={{ marginTop: "0", padding: 0, borderRadius: "10px", maxWidth: "50%" }}>
+                {/* <Dropdown.Item href="">
                   {t('ActiveLanguage')} : {i18n.language}
-                </Dropdown.Item>
-                <Dropdown.Divider />
-                <div style={{ display: "flex", flexDirection: "column" }}>
-                  <button onClick={() => clickHandle('tr')} style={{ border: "none" }}>Türkçe</button>
+                </Dropdown.Item> 
+                <Dropdown.Divider />  */}
+                <div className='langDiv'>
+                  <button onClick={() => clickHandle('tr')} style={{ border: "none", backgroundColor: "#7f56d9", borderRadius: "10px" }} className='dume'>Tr</button>
 
-                  <button onClick={() => clickHandle('en')} style={{ border: "none" }} className="mt-2">English</button>
+                  <button onClick={() => clickHandle('en')} style={{ border: "none", backgroundColor: "#7f56d9", borderRadius: "10px" }} className="mt-1 dume">En</button>
 
-                  <button onClick={() => clickHandle('ar')} style={{ border: "none" }} className="mt-2">عربي</button>
-
-
+                  <button onClick={() => clickHandle('ar')} style={{ border: "none", backgroundColor: "#7f56d9", borderRadius: "10px" }} className="mt-1 dume">Ar</button>
                 </div>
-
               </Dropdown.Menu>
             </Dropdown>
           </div>
 
 
-
-          <Nav>
-            <Container style={{ display: "flex", justifyContent: "start" }}>
-              <NavLink id='buttonLog'>{t('login')}</NavLink>
-              <NavLink id='buttonLog' className='ayrac'>/</NavLink>
-              <NavLink id='buttonLog'>{t('signup')}</NavLink>
-            </Container>
-          </Nav>
-          <div className='pt-2'>
-            <ButtonPurple id='buttonPurple' buttonText={t('btn')}  > </ButtonPurple>
-
-          </div>
 
 
 
@@ -91,6 +109,7 @@ const MyNavbar = () => {
 
 
         </Navbar.Collapse>
+
       </Container>
 
     </Navbar>

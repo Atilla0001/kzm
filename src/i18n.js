@@ -226,6 +226,31 @@ const resources = {
             excel38:" Dil ", 
             excel39:" Türkçe ", 
             excel40:" Eğitime Puan Ver ", 
+
+
+
+            gdetay0:"Güncel / Detay",
+            gdetay:"Detay",
+            gdetay2:"‘’Her şey Seninle Başlar Eğitim Programı’’Tüm Eğitim Şube Müdürlüğü çalışanlarınınkendini yenilemesi, değişen ve gelişeniletişim yöntemleri konusunda bilgilenmeleri ve iş yaşamında daha verimli olmaları adına“Her şey seninle başlar.” Mottosuyla yola çıkılarakbir eğitim planlaması yapıldı. Eğitim programlarsayesinde kurum içindeki ve kurum ile vatandaşarasındaki iletişim daha verimli hale gelmesiamaçlanmıştır. Yapılan eğitimler, mesai saatleriiçerisinde ve dışında planlanmış ve tüm çalışanların katılımı sağlanmıştır.Alanında uzman, saha deneyimi olaneğitmenler tarafından aşağıda bahsedilenbranşlarda eğitim verilmiştir. - İş YaşamındaKurum İçi İletişim - İş Yaşamında Etik ve Görgü Kuralları - Telefonda Etkili İletişimYöntemleri - Sözlü İletişim ve Beden Dili -Kişilik Analizi Eğitimi KOMEK kurslarındagörev yapan eğitmenlerimize ise İğneleme Keçe Tekniklerive Kırkyama Eğitimleri verilmiştir. Eğitimlerin sonundatüm personelimize e-Devlet onaylı katılım belgesiverilmiştir. Uzaktan eğitim yöntemi ile yapılaneğitimlerin tamamlanmasının ardından, tüm personelleriçin Selçuklu Kongre Merkezi’nde yüz yüze iki gün sürece olan eğitim programı yapıldı. Toplamda 335 personelimize eğitim verildi.",
+
+
+
+
+            bdetay:'Blog / Uzaktan Eğitim Nedir?',
+            bdetay1:'Uzaktan Eğitim: Yarının Eğitim Modeli ',
+            bdetay2:'UZAKTAN EĞİTİM NEDİR? ',
+            bdetay3:'Geleneksel eğitim, fiziksel sınıflar, tahtalar ve kampüslerle özdeşleşirken, teknolojinin hızlı gelişimiyle birlikte uzaktan eğitim kavramı önemli bir yükseliş yaşamaktadır. Uzaktan eğitim, öğrencilere coğrafi konumlarına bakılmaksızın eğitim alma fırsatı sunan bir eğitim modelini temsil eder. İşte bu yeni eğitim modelinin ne olduğu, faydaları, zorlukları ve neden geleceğin eğitim modeli olabileceği hakkında bir derleme.',
+            bdetay4:'Uzaktan Eğitim Nedir? ',
+            bdetay5:'Uzaktan eğitim, öğrencilere derslere internet aracılığıyla erişim sağlayan bir eğitim modelidir. Bu model, öğrencilere dersleri istedikleri yerde ve istedikleri zaman takip etme özgürlüğü sunar. Bu, öğrencilere çalışma, aile ve diğer kişisel taahhütlerini eğitimle uyumlu hale getirme fırsatı verir.',
+            bdetay6:'Faydaları Nelerdir?',
+            bdetay7:'Uzaktan eğitimin önemli avantajlarından biri, esneklik sunmasıdır. Öğrenciler, geleneksel sınıf saatlerine bağlı kalmak zorunda değildirler; bu da çalışan yetişkinler ve uzak bölgelerde yaşayan öğrenciler için son derece önemlidir. Ayrıca, uzaktan eğitim, öğrencilere dünyanın dört bir yanından uzman öğretmenlerin bilgisine erişim olanağı tanır. Bu, öğrencilere geleneksel eğitimde nadiren bulunan bir çeşitlilik ve deneyim sunar. Ek olarak, çevrimiçi eğitim genellikle maliyet açısından daha avantajlıdır, çünkü öğrenciler taşıma ve konaklama masraflarından tasarruf edebilirler.',
+            bdetay8:'Zorlukları Nelerdir? ',
+            bdetay9:'Ancak, uzaktan eğitim modelinin de bazı zorlukları vardır. Öğrencilerin, disiplinli ve kendi başlarına çalışma yeteneklerine sahip olmaları gerekebilir. Eğitim materyali ve etkileşim eksikliği, bazı öğrencilerin dikkatlerini dağıtabilir ve anlama konusunda zorluk yaşatabilir. Ayrıca, teknolojik sorunlar bazı öğrenciler için çevrimiçi derslerde sıkıntı yaratabilir.',
+            bdetay10:'Neden Geleceğin Eğitim Modeli Olabilir? ',
+            bdetay11:'Uzaktan eğitim, özellikle teknolojiye olan erişim arttıkça ve toplumlar daha bağlantılı hale geldikçe geleceğin eğitim modeli olabilir. Öğrencilere dünya çapında bir öğrenme deneyimi sunması, farklı kültürlerden ve bölgelerden gelen öğrencilerin bir araya gelmesini sağlar. Ayrıca, uzaktan eğitim, sürdürülebilir bir eğitim modeli olarak önemli bir rol oynayabilir, çünkü fiziksel mekanlara olan ihtiyacı azaltır ve böylece daha fazla öğrenciye ulaşılabilirlik sağlar. ',
+            bdetay12:'Sonuç Olarak ',
+            bdetay13:'Uzaktan eğitim, geleceğin eğitim modeli olma yolunda hızla ilerliyor. Esneklik, erişim ve maliyet avantajları, bu modelin cazibesini artırıyor. Ancak her öğrenci için uygun olmayabilir ve öğrencilerin disiplinli ve motive olma yeteneklerini korumaları gerekebilir. Uzaktan eğitim ve geleneksel eğitim, her iki dünyanın da en iyi özelliklerini bir araya getirerek öğrencilere daha fazla seçenek sunuyor ve böylece kendi öğrenme tarzlarına ve hedeflerine uygun olanı seçme fırsatı veriyor. ',
+
         }
     },
 
@@ -456,6 +481,34 @@ const resources = {
             excel39:" Türkçe", 
             excel40:" Rate Education ", 
 
+
+
+            gdetay0:"News / Detail",
+            gdetay:"Detail",
+            gdetay2:"Everything Starts with You Education Program 'Everything starts with you' for all Training Branch Directorate employees to renew themselves, to be informed about changing and developing communication methods and to be more productive in business life. An education plan was made based on the motto. Thanks to the training programs, it is aimed to make communication within the institution and between the institution and the citizen more efficient. The trainings were planned both during and outside working hours and all employees were ensured to participate. Training has been provided in the branches mentioned below by instructors who are experts in their fields and have field experience. - Internal Communication in Business Life - Ethics and Etiquette in Business Life - Effective Communication Methods on the Phone - Verbal Communication and Body Language - Personality Analysis Training Our instructors working in KOMEK courses were given Needle Felting Techniques and Patchwork Training. At the end of the training, all our personnel were given an e-Government approved participation certificate. Following the completion of the distance education training, a two-day face-to-face training program was held for all staff at the Selçuklu Congress Center. A total of 335 personnel were trained.",
+
+
+
+
+            
+
+
+
+            bdetay:'Blog / What is Distance Education?',
+            bdetay1:" Distance Education: Tomorrow's Education Model",
+            bdetay2:'WHAT IS DISTANCE EDUCATION? ',
+            bdetay3:'While traditional education is associated with physical classrooms, blackboards and campuses, with the rapid development of technology, the concept of distance education is experiencing a significant rise. Distance education represents an educational model that offers students the opportunity to receive education regardless of their geographical location. Here is a review of what this new education model is, its benefits, challenges and why it could be the education model of the future.',
+            bdetay4:'What is Distance Education? ',
+            bdetay5:'Distance education is an educational model that gives students access to courses via the internet. This model offers students the freedom to follow courses wherever and whenever they want. This gives students the opportunity to align work, family and other personal commitments with studying.',
+            bdetay6:'What are the Benefits?',
+            bdetay7:'One of the key advantages of distance learning is that it offers flexibility. Students do not have to stick to traditional classroom hours, which is extremely important for working adults and students living in remote areas. Furthermore, distance learning gives students access to the knowledge of expert teachers from around the world. This offers students a diversity and experience rarely found in traditional education. In addition, online education is often more cost-effective because students can save on transportation and accommodation costs.',
+            bdetay8:'What are the Challenges? ',
+            bdetay9:'However, the distance learning model also has its challenges. Students may need to be disciplined and capable of working on their own. The lack of educational material and interaction can distract some students and make comprehension difficult. In addition, technological issues may cause difficulties for some students in online courses.',
+            bdetay10:'Why it could be the Education Model of the Future? ',
+            bdetay11:'Distance learning could be the educational model of the future, especially as access to technology increases and societies become more connected. Offering students a worldwide learning experience allows students from different cultures and regions to come together. Furthermore, distance learning can play an important role as a sustainable model of education because it reduces the need for physical venues, thus making it accessible to more students. ',
+            bdetay12:'As a Result',
+            bdetay13:'Distance education is rapidly becoming the education model of the future. Flexibility, access and cost advantages add to its appeal. However, it may not be suitable for every student and students may need to maintain their ability to stay disciplined and motivated. Distance learning and traditional education combine the best of both worlds, giving students more choice and the opportunity to choose what suits their learning style and goals. ',
+
         }
     },
 
@@ -673,7 +726,7 @@ const resources = {
             excel23:" Lorem ipsum dolor sit amet.",
             excel24:" SLorem ipsum dolor sit amet. ",
             excel25:" Lorem ipsum dolor sit amet. ",
-            excel26:" Lorem ipsum dolor sit amet.",
+            excel26:" Lorem ipsum dolor sit amet.",   
             excel27:" الفئة.",
             excel28:" ب- التقنيات ",
             excel29:" المدرب ",
@@ -688,6 +741,34 @@ const resources = {
             excel38:" اللغة ", 
             excel39:" تركي", 
             excel40:" معدل التدريب ", 
+
+
+            gdetay0: "الأخبار / التفاصيل",
+            gdetay: "التفاصيل",
+            gdetay2: "كل شيء يبدأ بك برنامج كل شيء يبدأ بك كل شيء يبدأ بك.'  من أجل أن يجدد جميع موظفي مديرية فرع التعليم أنفسهم، وأن يكونوا على دراية بأساليب التواصل المتغيرة والمتطورة وأن يكونوا أكثر كفاءة في الحياة العملية. تم التخطيط لبرنامج تدريبي قائم على شعارل شيء يبدأ بك. وبفضل البرامج التدريبية، يهدف البرنامج إلى جعل التواصل داخل المؤسسة وبين المؤسسة والمواطنين أكثر كفاءة. تم التخطيط للدورات التدريبية داخل وخارج ساعات العمل وتم ضمان مشاركة جميع الموظفين. وقد تم تقديم التدريبات في الفروع التالية من قبل مدربين خبراء في مجالاتهم ولديهم خبرة ميدانية. - التواصل الداخلي في الحياة العملية - قواعد الأخلاقيات والآداب في الحياة العملية - أساليب التواصل الفعال على الهاتف - التواصل اللفظي ولغة الجسد - التدريب على تحليل الشخصية تم إعطاء المدربين العاملين في دورات كومك تقنيات التلبيد بالإبر والتدريب على صناعة الكينكل. وفي نهاية التدريبات، حصل جميع موظفينا على شهادات مشاركة معتمدة من الحكومة الإلكترونية. بعد الانتهاء من التدريب على التعليم عن بُعد، عُقد برنامج تدريبي مباشر لمدة يومين لجميع الموظفين في مركز سلجوقلو للمؤتمرات. وتم تدريب ما مجموعه 335 موظفاً. " ,
+      
+      
+      
+      
+      
+            bdetay:'المدونة / ما هو التعليم عن بُعد؟',
+            bdetay1:'التعليم عن بُعد: نموذج تعليم الغد ',
+            bdetay2:'ما هو التعليم عن بُعد؟ ',
+            bdetay3:'بينما يرتبط التعليم التقليدي بالفصول الدراسية الفعلية والسبورات والألواح السوداء والحرم الجامعي، يشهد مفهوم التعليم عن بُعد ارتفاعًا كبيرًا مع التطور السريع للتكنولوجيا. يمثل التعليم عن بُعد نموذجاً تعليمياً يتيح للطلاب فرصة تلقي التعليم بغض النظر عن موقعهم الجغرافي. فيما يلي استعراض لماهية هذا النموذج التعليمي الجديد وفوائده وتحدياته ولماذا يمكن أن يكون نموذج التعليم في المستقبل.',
+            bdetay4:'ما هو التعليم عن بُعد؟ ',
+            bdetay5:'التعليم عن بُعد هو نموذج تعليمي يوفر للطلاب إمكانية الوصول إلى الدورات التدريبية عبر الإنترنت. يوفر هذا النموذج للطلاب حرية متابعة الدورات التدريبية أينما كانوا ومتى أرادوا. وهذا يمنح الطلاب الفرصة للتوفيق بين العمل والأسرة والالتزامات الشخصية الأخرى والدراسة.',
+            bdetay6:'ما هي الفوائد؟',
+            bdetay7:'تتمثل إحدى المزايا الرئيسية للتعلم عن بُعد في أنه يوفر المرونة. حيث لا يتعين على الطلاب الالتزام بساعات الدراسة التقليدية، وهو أمر في غاية الأهمية بالنسبة للبالغين العاملين والطلاب الذين يعيشون في مناطق نائية. علاوة على ذلك، يتيح التعلم عن بُعد للطلاب إمكانية الوصول إلى معرفة المعلمين الخبراء من جميع أنحاء العالم. وهذا يوفر للطلاب تنوعاً وخبرة نادراً ما توجد في التعليم التقليدي. وبالإضافة إلى ذلك، غالباً ما يكون التعليم عن بُعد أكثر فائدة من حيث التكلفة، حيث يمكن للطلاب توفير تكاليف النقل والإقامة.',
+            bdetay8:'ما هي التحديات؟ ',
+            bdetay9:'ومع ذلك، فإن نموذج التعلم عن بعد ينطوي أيضاً على بعض التحديات. فقد يحتاج الطلاب إلى أن يكونوا منضبطين وقادرين على العمل بمفردهم. قد يؤدي نقص المواد التعليمية والتفاعلية إلى تشتيت انتباه بعض الطلاب والتسبب في صعوبات في الفهم. كما أن المشاكل التكنولوجية قد تسبب صعوبات لبعض الطلاب في المقررات الدراسية عبر الإنترنت.',
+            bdetay10:' لماذا يمكن أن يكون نموذج التعليم في المستقبل؟',
+            bdetay11:' يمكن أن يكون التعلم عن بُعد هو النموذج التعليمي للمستقبل، خاصة مع زيادة فرص الوصول إلى التكنولوجيا وزيادة ترابط المجتمعات. إن توفير تجربة تعليمية عالمية للطلاب يتيح للطلاب من ثقافات ومناطق مختلفة الالتقاء معاً. علاوة على ذلك، يمكن للتعلم عن بُعد أن يلعب دوراً مهماً كنموذج تعليمي مستدام لأنه يقلل من الحاجة إلى الأماكن المادية وبالتالي يوفر إمكانية الوصول إلى عدد أكبر من الطلاب.',
+            bdetay12:'الخاتمة ',
+            bdetay13:'يتحول التعليم عن بُعد بسرعة إلى نموذج التعليم في المستقبل. وتزيد المرونة وإمكانية الوصول ومزايا التكلفة من جاذبية هذا النموذج. ومع ذلك، قد لا يكون مناسباً لكل طالب، وقد يحتاج الطلاب إلى الحفاظ على قدرتهم على الانضباط والتحفيز. يجمع التعليم عن بُعد والتعليم التقليدي بين أفضل ما في العالمين، مما يمنح الطلاب المزيد من الخيارات وفرصة اختيار ما يناسب أسلوبهم وأهدافهم التعليمية. ',
+
+      
+      
+      
         }
     }
 

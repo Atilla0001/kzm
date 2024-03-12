@@ -14,6 +14,7 @@ const FontHead = (props) => {
         <img src="../src/assets/images/rectangleBg.png" alt="" id="img" />
         <h3>{props.page}</h3>
         <p style={{whiteSpace:"-moz-pre-wrap"}}>{t("titleHome")} / {props.page} </p>
+        
       </div>
 
     </Container>

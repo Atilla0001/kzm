@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import { CiPhone, CiMail, CiLocationOn, CiFacebook } from "react-icons/ci";
 import "./MainFooter.scss"
 import { RxInstagramLogo } from "react-icons/rx";
-import { RiTwitterLine } from "react-icons/ri";
+import { RiTwitterXFill } from "react-icons/ri";
 import CardFooter from '../cards/cardFooter/CardFooter';
 import PropTypes from 'prop-types'
 import { useTranslation } from "react-i18next"
@@ -102,7 +102,7 @@ const MainFooter = (props) => {
             <p >Copyright 2024 | Şehir Teknolojileri Merkezi</p>
             <div>
               <CiFacebook className='socialMedia' />
-              <RiTwitterLine className=' socialMedia' />
+              <RiTwitterXFill className='socialMedia'/>
               <RxInstagramLogo className='socialMedia' />
             </div>
           </div>
