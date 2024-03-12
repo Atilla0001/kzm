@@ -9,6 +9,7 @@ import İletisim from './pages/iletisim/İletisim'
 import EducationPage from './pages/educationPage/EducationPage'
 import GuncelDetay from './pages/guncelDetay/GuncelDetay'
 import BlogDetay from './pages/blogDetay/BlogDetay'
+import NotFound from './pages/notFound/NotFound'
 
 
 
@@ -29,14 +30,9 @@ function App() {
       <Route path='/iletisim' element={<İletisim/>}></Route>
       <Route path='/blogdetay' element={<BlogDetay/>}></Route>
       <Route path='/gunceldetay' element={<GuncelDetay></GuncelDetay>}></Route>
-
-
-
+      <Route path='*' element={<NotFound/>}></Route>
     </Routes>
     </BrowserRouter>
-      
-  
-
     </>
   )
 }
