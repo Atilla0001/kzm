@@ -1,14 +1,17 @@
 
-
+import "./Notfound.scss"
 function NotFound() {
   return (
-<div style={{display: "flex", justifyContent: "center", alignItems: "center",  maxWidth:"1600px", maxHeight:"600px", backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
-  <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%"}}>
+<div>
+{/*   <div style={{display:"flex", justifyContent:"center",backgroundColor:"gray", height:""}}><h1 style={{}}>404 Page Not Found </h1></div> */}
+
+   <div className="yyy">
    
-      <img src="../../src/assets/images/aic3.jpg" alt="" style={{width: "100%", height: "auto"}} />
+      <img src="../../src/assets/images/aic3.jpg" alt=""  />
     
   </div>
 </div>
+ 
 
   
   )
